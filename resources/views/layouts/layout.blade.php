@@ -33,10 +33,12 @@
 <body>
 <div class="wrapper">
 
-    @include('partials.nav')
+    @include('partials.header')
+
+    @yield('content')
 
     <div id="content" role="main">
-        <!-- Promo Section -->
+        {{--Banner--}}
         <section class="section section-alt">
             <div class="row-fluid">
                 <div class="super-hero-unit">
@@ -60,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <!-- Our Services -->
+        {{--Main Content--}}
         <section class="section section-padded">
             <div class="container-fluid">
                 <p class="lead text-left">

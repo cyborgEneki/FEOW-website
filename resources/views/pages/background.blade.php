@@ -1,349 +1,208 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if (gt IE 8)]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if (gt IE 8)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <title></title>
-  <meta content="Bootsrap based theme" name="description">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title></title>
+    <meta content="Bootsrap based theme" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="javascripts/PIE.js"></script>
-  <![endif]-->
-  <link href="../../../public/img/favicon.ico" rel="shortcut icon">
-  <link href="../../../public/img/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
-  <link href="../../../public/img/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
-  <link href="../../../public/img/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
-  <link href="../../../public/img/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
-  <link href="../../../public/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../../../public/css/responsive.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../../../public/css/font-awesome-all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../../../public/css/fancybox.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../../../public/css/theme.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../../../public/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link href="{{ asset('/img/favicon.ico') }}" rel="shortcut icon">
+    <link href="{{ asset('/img/apple-touch-icon-144x144-precomposed.png') }}" rel="apple-touch-icon-precomposed"
+          sizes="144x144">
+    <link href="{{ asset('/img/apple-touch-icon-114x114-precomposed.png') }}" rel="apple-touch-icon-precomposed"
+          sizes="114x114">
+    <link href="{{ asset('/img/apple-touch-icon-72x72-precomposed.png') }}" rel="apple-touch-icon-precomposed"
+          sizes="72x72">
+    <link href="{{ asset('/img/apple-touch-icon-57x57-precomposed.png') }}" rel="apple-touch-icon-precomposed">
+    <link href="{{ asset('/css/bootstrap.css') }}" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/css/responsive.css') }}" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/css/font-awesome-all.css') }}" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/css/fancybox.css') }}" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/css/theme.css') }}" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/css/fonts.css') }}" media="screen" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <div class="wrapper">
-    <!-- Page Header -->
-    <header id="masthead">
-      <nav class="navbar navbar-static-top">
-        <div class="navbar-inner">
-          <div class="container-fluid">
-            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <h1 class="brand">
-              <a href="index.html">
-                Smart<span class="light">Box</span></a>
-            </h1>
-            <div class="nav-collapse collapse">
-              <ul class="nav pull-right">
-                <li class=""><a href="..">Home</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="../about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="../services.html">Services</a>
-                    </li>
-                    <li>
-                      <a href="../faq.html">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="../pricing.html">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="../docs.html">Docs</a>
-                    </li>
-                    <li>
-                      <a href="background.blade.php">Testimonials</a>
-                    </li>
-                    <li>
-                      <a href="../404.html">404</a>
-                    </li>
-                    <li>
-                      <a href="../sidebar-right.html">Right sidebar</a>
-                    </li>
-                    <li>
-                      <a href="../sidebar-left.html">Left sidebar</a>
-                    </li>
-                    <li>
-                      <a href="../fullbg.html">Full background</a>
-                    </li>
-                    <li>
-                      <a href="../altpage.html">Alternative</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="../typography.html">Typography</a>
-                    </li>
-                    <li>
-                      <a href="../elements.html">Elements</a>
-                    </li>
-                    <li>
-                      <a href="../icons.html">Icons</a>
-                    </li>
-                    <li>
-                      <a href="../tables.html">Tables</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="../blog.html">Normal blog</a>
-                    </li>
-                    <li>
-                      <a href="../timeline.html">Timeline</a>
-                    </li>
-                    <li>
-                      <a href="../blog-fullwidth.html">Fullwidth blog</a>
-                    </li>
-                    <li>
-                      <a href="../post.html">Single post</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="../portfolio-3col.html">Three Columns</a>
-                    </li>
-                    <li>
-                      <a href="../portfolio-4col.html">Four Columns</a>
-                    </li>
-                    <li>
-                      <a href="../portfolio-item.html">Single Item</a>
-                    </li>
-                    <li>
-                      <a href="../portfolio-3col-squared.html">Squared Portfolio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class=""><a href="../contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- Main Content -->
+<div class="wrapper">
+
+    @include('partials.header')
+
+    @yield('content')
+
     <div id="content" role="main">
-      <!-- Promo Section -->
-      <section class="section section-alt">
-        <div class="row-fluid">
-          <div class="super-hero-unit">
-            <figure>
-              <img alt="some image" src="../../../public/img/assets/landscapes/landscape-5-1250x300.jpg">
-              <figcaption class="flex-caption">
-                <h1 class="super animated fadeinup delayedmore">
-                  Quotes
-                  <span class="lighter">
-                    &amp;
-                  </span>
-                  Words
-                </h1>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <!-- Our Services -->
-      <section class="section section-padded">
-        <div class="container-fluid">
-          <div class="section-header">
-            <h1>
-              Clients
-              <small class="light">Said</small>
-            </h1>
-          </div>
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="round-box box-big">
-                <span class="box-inner">
-                  <img alt="some image" class="img-circle" src="../../../public/img/assets/people/man-5-300x300.jpg">
-                </span>
-              </div>
-            </div>
-            <div class="span9">
-              <blockquote>
-                <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <small>
-                  Sam Doe
-                  <cite title="Source Title">biz inc</cite>
-                </small>
-              </blockquote>
-            </div>
-          </div>
-          <hr>
-          <div class="row-fluid">
-            <div class="span9">
-              <blockquote class="pull-right">
-                <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa.
-                </p>
-                <small>
-                  Sam Doe
-                  <cite title="Source Title">biz inc</cite>
-                </small>
-              </blockquote>
-            </div>
-            <div class="span3">
-              <div class="round-box box-big">
-                <span class="box-inner">
-                  <img alt="some image" class="img-circle" src="../../../public/img/assets/people/man-2-300x300.jpg">
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonials -->
-      <section class="section section-alt section-padded">
-        <div class="container-fluid">
-          <div class="section-header">
-            <h1>
-              Want
-              <small class="light">more?</small>
-            </h1>
-          </div>
-          <ul class="inline row-fluid">
-            <li class="span4">
-              <div class="well blockquote-well">
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <small>
-                    Sam Doe
-                    <cite title="Source Title">biz inc</cite>
-                  </small>
-                </blockquote>
-                <div class="round-box box-medium">
-                  <span class="box-inner">
-                    <img alt="some image" class="img-circle" src="../../../public/img/assets/people/man-1-300x300.jpg">
-                  </span>
+        {{--Banner--}}
+        <section class="section section-alt">
+            <div class="row-fluid">
+                <div class="super-hero-unit">
+                    <figure class="dark-background">
+                        <img alt="river meandering through a shallow valley"
+                             src="{{ asset('/img/assets/feow/bird-1.jpeg') }}" class="half-opacity">
+                        <figcaption class="flex-caption">
+                            <h1 class="super animated fadeinup delayedmore">
+                                Background
+                            </h1>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-            </li>
-            <li class="span4">
-              <div class="well blockquote-well">
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <small>
-                    Jim Dow
-                    <cite title="Source Title">company co</cite>
-                  </small>
-                  <div class="round-box box-medium">
-                    <span class="box-inner">
-                      <img alt="some image" class="img-circle" src="../../../public/img/assets/people/woman-3-300x300.jpg">
-                    </span>
-                  </div>
-                </blockquote>
-              </div>
-            </li>
-            <li class="span4">
-              <div class="well blockquote-well">
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <small>
-                    Dog doe
-                    <cite title="Source Title">doghouse inc</cite>
-                  </small>
-                  <div class="round-box box-medium">
-                    <span class="box-inner">
-                      <img alt="some image" class="img-circle" src="../../../public/img/assets/people/man-2-300x300.jpg">
-                    </span>
-                  </div>
-                </blockquote>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </div>
+        </section>
+        {{--Main Content--}}
+        <section class="section section-padded">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span3">
+                        <div>
+                            <img alt="some image" class="img-circle section-image"
+                                 src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
+                        </div>
+                    </div>
+                    <div class="span9">
+                        <blockquote>
+                            <p class="lead">
+                                {{--Main Content--}}
+                                Freshwater species and habitats are, on average around the world, more imperiled than
+                                their terrestrial counterparts. Yet, large-scale conservation planning efforts have
+                                rarely targeted freshwater biodiversity. This inattention is due in part to the fact
+                                that, compared to better-studied terrestrial taxa, there has been a severe lack of
+                                comprehensive, synthesized data on the distributions of freshwater species. Existing
+                                worldwide species-level data have covered only the largest river basins or select
+                                hotspots, rather than all inland waters. Additionally, these data syntheses have made
+                                little attempt to describe biogeographic patterns. Freshwater Ecoregions of the World
+                                (FEOW) is a collaborative project providing the first global biogeographic
+                                regionalization of the Earth’s freshwater biodiversity, and synthesizing biodiversity
+                                and threat data for the resulting ecoregions. We define a freshwater ecoregion as a
+                                large area encompassing one or more freshwater systems that contains a distinct
+                                assemblage of natural freshwater communities and species. The freshwater species,
+                                dynamics, and environmental conditions within a given ecoregion are more similar to each
+                                other than to those of surrounding ecoregions and together form a conservation unit. The
+                                freshwater ecoregion map serves as a complement to the global terrestrial and marine
+                                ecoregion maps and differs from them in that freshwater species (primarily fish) and
+                                freshwater processes drove the map delineation. A detailed description of the
+                                delineation methodology is available in Abell et al. (2008) (click here to download; 6
+                                MB).
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h1>
+                        The
+                        <small class="light">Map</small>
+                    </h1>
+                </div>
+                <div class="row-fluid">
+                    <div class="span9">
+                        <blockquote class="pull-right">
+                            <p class="lead">
+                                The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
+                                not always – correspond with those of watersheds (also known as drainage basins or
+                                catchments). Within individual ecoregions there will be turnover of species, such as
+                                when moving up or down a river system, but taken as a whole an ecoregion will typically
+                                have a distinct evolutionary history and/or ecological processes. Ecoregions are
+                                delineated based on the best available information, but data describing freshwater
+                                species and ecological processes are characterized by marked gaps and variation in
+                                quality, and improved information in the future may warrant map revisions.
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div class="span3">
+                        <div>
+                            <img alt="some image" class="img-circle section-image"
+                                 src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h1>
+                        Ecoregional
+                        <small class="light">Data</small>
+                    </h1>
+                </div>
+                <div class="row-fluid">
+                    <div class="span3">
+                        <div>
+                            <img alt="some image" class="img-circle section-image"
+                                 src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
+                        </div>
+                    </div>
+                    <div class="span9">
+                        <blockquote>
+                            <p class="lead">
+                                {{--Main Content--}}
+                                The biodiversity data synthesized for ecoregions include richness and endemism numbers
+                                for freshwater fish, amphibians, turtles, and crocodiles, derived in nearly all cases
+                                from either species lists or digital distribution data. Additional information about
+                                species will be found within the individual ecoregion descriptions, which also will
+                                include details on ecoregion boundaries, topography, climate, habitats, ecological and
+                                evolutionary phenomena, and other features. Threat analyses include examination of land
+                                cover conversion, the presence of large cities, urban land cover, area equipped for
+                                irrigation, human footprint, and water stress. These analyses are based on global
+                                datasets and examine threats through the lens of freshwater systems and species.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h1>
+                        Conservation
+                        <small class="light">Applications</small>
+                    </h1>
+                </div>
+                <div class="row-fluid">
+                    <div class="span9">
+                        <blockquote class="pull-right">
+                            <p class="lead">
+                                The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
+                                not always – correspond with those of watersheds (also known as drainage basins or
+                                catchments). Within individual ecoregions there will be turnover of species, such as
+                                when moving up or down a river system, but taken as a whole an ecoregion will typically
+                                have a distinct evolutionary history and/or ecological processes. Ecoregions are
+                                delineated based on the best available information, but data describing freshwater
+                                species and ecological processes are characterized by marked gaps and variation in
+                                quality, and improved information in the future may warrant map revisions.
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div class="span3">
+                        <div>
+                            <img alt="some image" class="img-circle section-image"
+                                 src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
-  <!-- Page Footer -->
-  <footer id="footer" role="contentinfo">
-    <div class="wrapper wrapper-transparent">
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span6 small-screen-center">
-            <h3>
-              Smart
-              <span class="light">
-                Box
-              </span>
-            </h3>
-            <p>
-              +44 1234 56.78.910  |  info@somecompany.com
-              <br>
-              Some St  777, 47000 Fancy town, Country.
-              <br>
-              &copy; Copyright 2013
-            </p>
-          </div>
-          <div class="span6">
-            <ul class="unstyled inline text-right small-screen-center big social-icons">
-              <li>
-                <a data-iconcolor="#00a0d1" href="#">
-                  <i class="icon-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a data-iconcolor="#3b5998" href="#">
-                  <i class="icon-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a data-iconcolor="#910101" href="#">
-                  <i class="icon-pinterest"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="javascripts/jquery.min.js" type="text/javascript"></script>
-  <script src="javascripts/bootstrap.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.flexslider-min.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.tweet.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.fancybox-media.js" type="text/javascript"></script>
-  <script src="javascripts/script.js" type="text/javascript"></script>
+
+</div>
+
+@include('partials.footer')
+
+<script src="{{ asset('/js/jquery.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/bootstrap.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/jquery.tweet.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/jquery.fancybox.pack.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/jquery.fancybox-media.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/js/script.js') }}" type="text/javascript"></script>
 <script type="text/javascript">
-if (typeof gaJsHost == 'undefined') {
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-}
+    if (typeof gaJsHost == 'undefined') {
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    }
 </script>
 <script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("#########");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    try {
+        var pageTracker = _gat._getTracker("#########");
+        pageTracker._trackPageview();
+    } catch (err) {
+    }</script>
 </body>

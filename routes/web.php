@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/background', function () {
-    return view('background');
+    return view('pages.background');
 });
