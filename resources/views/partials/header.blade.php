@@ -19,57 +19,37 @@
                         <li class=""><a href="{{ url('/') }}">Home</a></li>
                         <li class=""><a href="{{ url('/background') }}">Background</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features</a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Global Maps</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="../typography.html">Typography</a>
+                                    <a href="{{ url('/major-habitat-types') }}">Major Habitat Types</a>
                                 </li>
                                 <li>
-                                    <a href="../elements.html">Elements</a>
+                                    <a href="../elements.html">Biodiversity</a>
                                 </li>
                                 <li>
-                                    <a href="../icons.html">Icons</a>
-                                </li>
-                                <li>
-                                    <a href="../tables.html">Tables</a>
+                                    <a href="../icons.html">Threat</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ecoregions</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="../blog.html">Normal blog</a>
+                                    <a href="../blog.html">Interactive Map</a>
                                 </li>
                                 <li>
-                                    <a href="../timeline.html">Timeline</a>
+                                    <a href="../timeline.html">Browse</a>
                                 </li>
                                 <li>
-                                    <a href="../blog-fullwidth.html">Fullwidth blog</a>
-                                </li>
-                                <li>
-                                    <a href="../post.html">Single post</a>
+                                    <a href="../blog-fullwidth.html">Search</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="../portfolio-3col.html">Three Columns</a>
-                                </li>
-                                <li>
-                                    <a href="../portfolio-4col.html">Four Columns</a>
-                                </li>
-                                <li>
-                                    <a href="../portfolio-item.html">Single Item</a>
-                                </li>
-                                <li>
-                                    <a href="../portfolio-3col-squared.html">Squared Portfolio</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="../contact.html">Contact</a></li>
+                        <li class=""><a href="{{ url('/background') }}">Downloads</a></li>
+                        <li class=""><a href="{{ url('/background') }}">Contributors</a></li>
+                        <li class=""><a href="{{ url('/background') }}">Bibliography</a></li>
+                        <li class=""><a href="{{ url('/background') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>

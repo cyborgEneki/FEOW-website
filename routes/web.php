@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/background', function () {
     return view('pages.background');
 });
+
+Route::get('/global-maps/major-habitat-types', function () {
+    return view('pages.major-habitat-types');
+});
