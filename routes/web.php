@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.layout');
+    return view('pages.home');
 });
 
 Route::get('/background', function () {
