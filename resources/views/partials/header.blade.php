@@ -22,13 +22,13 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Global Maps</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ url('/major-habitat-types') }}">Major Habitat Types</a>
+                                    <a href="{{ url('/global-maps/major-habitat-types') }}">Major Habitat Types</a>
                                 </li>
                                 <li>
-                                    <a href="../elements.html">Biodiversity</a>
+                                    <a href="{{ url('/global-maps/biodiversity') }}">Biodiversity</a>
                                 </li>
                                 <li>
-                                    <a href="../icons.html">Threat</a>
+                                    <a href="{{ url('/global-maps/threat') }}">Threat</a>
                                 </li>
                             </ul>
                         </li>
@@ -36,20 +36,20 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ecoregions</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="../blog.html">Interactive Map</a>
+                                    <a href="{{ url('/ecoregions/interactive-map') }}">Interactive Map</a>
                                 </li>
                                 <li>
-                                    <a href="../timeline.html">Browse</a>
+                                    <a href="{{ url('/ecoregions/browse') }}">Browse</a>
                                 </li>
                                 <li>
-                                    <a href="../blog-fullwidth.html">Search</a>
+                                    <a href="{{ url('/ecoregions/search') }}">Search</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class=""><a href="{{ url('/background') }}">Downloads</a></li>
-                        <li class=""><a href="{{ url('/background') }}">Contributors</a></li>
-                        <li class=""><a href="{{ url('/background') }}">Bibliography</a></li>
-                        <li class=""><a href="{{ url('/background') }}">Contact</a></li>
+                        <li class=""><a href="{{ url('/downloads') }}">Downloads</a></li>
+                        <li class=""><a href="{{ url('/contributors') }}">Contributors</a></li>
+                        <li class=""><a href="{{ url('/bibliography') }}">Bibliography</a></li>
+                        <li class=""><a href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
