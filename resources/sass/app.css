@@ -1,16 +1,16 @@
 /*
 Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
-        on line 11 of app.scss
+        on line 12 of app.scss
 
-6: @import 'variables';
 7: @import 'home';
 8: @import 'background';
-9: 
-10: // Bootstrap
-11: @import '~bootstrap/scss/bootstrap';
+9: @import 'header';
+10: 
+11: // Bootstrap
+12: @import '~bootstrap/scss/bootstrap';
 
 Backtrace:
-app.scss:11
+app.scss:12
 /Users/jeneki/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/jeneki/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:44:in `import'
 /Users/jeneki/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -50,4 +50,4 @@ app.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A         on line 11 of app.scss\A \A 6: @import 'variables';\A 7: @import 'home';\A 8: @import 'background';\A 9: \A 10: // Bootstrap\A 11: @import '~bootstrap/scss/bootstrap';"; }
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A         on line 12 of app.scss\A \A 7: @import 'home';\A 8: @import 'background';\A 9: @import 'header';\A 10: \A 11: // Bootstrap\A 12: @import '~bootstrap/scss/bootstrap';"; }
