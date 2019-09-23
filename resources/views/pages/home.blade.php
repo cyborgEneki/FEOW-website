@@ -29,7 +29,7 @@
     {{--Main Content--}}
     <section class="section section-padded">
         <div class="container-fluid">
-            <p class="lead body-text text-left">
+            <p class="body-text text-left">
                 <strong>Freshwater Ecoregions of the World, (FEOW)</strong> provides a new global biogeographic
                 regionalization of
                 the Earth’s freshwater biodiversity. Covering virtually all freshwater habitats on Earth, this

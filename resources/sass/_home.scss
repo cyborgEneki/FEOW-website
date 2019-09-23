@@ -1,14 +1,7 @@
 // Home page
-body {
-    font-family: "Helvetica Neue", sans-serif !important;
-    line-height: 1.8 !important;
-}
-
-@media only screen and (min-width: 768px) {
-    .main-banner-text {
-        font-size: 45px;
-        font-weight: 900;
-    }
+#body-formatting {
+    line-height: 1.8;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 .main-banner-text {
@@ -60,5 +53,18 @@ body {
 }
 
 .body-text {
-    font-size: 1.0rem !important;
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main-banner-text {
+        font-size: 45px;
+        font-weight: 900;
+    }
+    .body-text {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
 }

@@ -3,15 +3,15 @@
 }
 
 .left-text-block-styling {
-    padding: 0 0 0 15px !important;
-    margin: 0 0 24px !important;
-    border-left: 5px solid #f2f2f4 !important;
+    padding: 0 0 0 15px;
+    margin: 0 0 24px;
+    border-left: 5px solid #f2f2f4;
 }
 
 .right-text-block-styling {
-    padding: 0 0 0 15px !important;
-    margin: 0 0 24px !important;
-    border-right: 5px solid #f2f2f4 !important;
+    padding: 0 0 0 15px;
+    margin: 0 0 24px;
+    border-right: 5px solid #f2f2f4;
 }
 
 .margin-bottom-30 {
@@ -20,11 +20,12 @@
 
 
 .background-padding {
-    padding: 25px !important;
+    padding: 25px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
     .background-padding {
-        padding: 0 80px !important;
+        padding: 0 80px;
     }
 }

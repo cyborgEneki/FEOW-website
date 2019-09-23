@@ -1,13 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,400italic);body {
-  font-family: "Helvetica Neue", sans-serif !important;
-  line-height: 1.8 !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-banner-text {
-    font-size: 45px;
-    font-weight: 900;
-  }
+#body-formatting {
+  line-height: 1.8;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .main-banner-text {
@@ -59,7 +52,20 @@
 }
 
 .body-text {
-  font-size: 1.0rem !important;
+  font-size: 1.0rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-banner-text {
+    font-size: 45px;
+    font-weight: 900;
+  }
+
+  .body-text {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
 }
 
 .section-image {
@@ -67,15 +73,15 @@
 }
 
 .left-text-block-styling {
-  padding: 0 0 0 15px !important;
-  margin: 0 0 24px !important;
-  border-left: 5px solid #f2f2f4 !important;
+  padding: 0 0 0 15px;
+  margin: 0 0 24px;
+  border-left: 5px solid #f2f2f4;
 }
 
 .right-text-block-styling {
-  padding: 0 0 0 15px !important;
-  margin: 0 0 24px !important;
-  border-right: 5px solid #f2f2f4 !important;
+  padding: 0 0 0 15px;
+  margin: 0 0 24px;
+  border-right: 5px solid #f2f2f4;
 }
 
 .margin-bottom-30 {
@@ -83,12 +89,13 @@
 }
 
 .background-padding {
-  padding: 25px !important;
+  padding: 25px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .background-padding {
-    padding: 0 80px !important;
+    padding: 0 80px;
   }
 }
 
@@ -97,6 +104,23 @@
   font-size: 30px;
   line-height: 30px;
   padding: 20px 20px 0px 20px;
+}
+
+.contact-form-input {
+  padding: 4px 6px;
+  margin: 0px 0px 12px;
+  border-color: #E2E2E2;
+  border-width: thin;
+}
+
+.contact-button {
+  background-color: #42576a !important;
+  border-color: #42576a !important;
+  border-radius: 0px;
+  padding: 4px 12px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  color: white;
 }
 
 /*!

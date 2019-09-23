@@ -19,7 +19,7 @@
     </section>
     {{--Main Content--}}
     <section class="section section-padded">
-        <div class="container-fluid background-padding">
+        <div class="background-padding">
             <div class="row-fluid">
                 <div class="span3">
                     <div class="margin-bottom-30">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="span9">
                     <blockquote class="left-text-block-styling">
-                        <p class="lead body-text">
+                        <p class="body-text">
                             {{--Main Content--}}
                             Freshwater species and habitats are, on average around the world, more imperiled than
                             their terrestrial counterparts. Yet, large-scale conservation planning efforts have
@@ -64,7 +64,7 @@
             <div class="row-fluid reorder-container">
                 <div class="span9 reorder-original-top">
                     <blockquote class="pull-right right-text-block-styling">
-                        <p class="lead body-text">
+                        <p class="body-text">
                             The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
                             not always – correspond with those of watersheds (also known as drainage basins or
                             catchments). Within individual ecoregions there will be turnover of species, such as
@@ -98,7 +98,7 @@
                 </div>
                 <div class="span9">
                     <blockquote>
-                        <p class="lead left-text-block-styling body-text">
+                        <p class="left-text-block-styling body-text">
                             {{--Main Content--}}
                             The biodiversity data synthesized for ecoregions include richness and endemism numbers
                             for freshwater fish, amphibians, turtles, and crocodiles, derived in nearly all cases
@@ -122,7 +122,7 @@
             <div class="row-fluid reorder-container">
                 <div class="span9 reorder-original-top">
                     <blockquote class="pull-right right-text-block-styling">
-                        <p class="lead body-text">
+                        <p class="body-text">
                             The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
                             not always – correspond with those of watersheds (also known as drainage basins or
                             catchments). Within individual ecoregions there will be turnover of species, such as
