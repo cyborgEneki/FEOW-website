@@ -19,17 +19,17 @@
     </section>
     {{--Main Content--}}
     <section class="section section-padded">
-        <div class="container-fluid">
+        <div class="container-fluid background-padding">
             <div class="row-fluid">
                 <div class="span3">
-                    <div>
+                    <div class="margin-bottom-30">
                         <img alt="some image" class="img-circle section-image"
                              src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
                     </div>
                 </div>
                 <div class="span9">
-                    <blockquote>
-                        <p class="lead">
+                    <blockquote class="left-text-block-styling">
+                        <p class="lead body-text">
                             {{--Main Content--}}
                             Freshwater species and habitats are, on average around the world, more imperiled than
                             their terrestrial counterparts. Yet, large-scale conservation planning efforts have
@@ -61,10 +61,10 @@
                     <small class="light">Map</small>
                 </h1>
             </div>
-            <div class="row-fluid">
-                <div class="span9">
-                    <blockquote class="pull-right">
-                        <p class="lead">
+            <div class="row-fluid reorder-container">
+                <div class="span9 reorder-original-top">
+                    <blockquote class="pull-right right-text-block-styling">
+                        <p class="lead body-text">
                             The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
                             not always – correspond with those of watersheds (also known as drainage basins or
                             catchments). Within individual ecoregions there will be turnover of species, such as
@@ -76,8 +76,8 @@
                         </p>
                     </blockquote>
                 </div>
-                <div class="span3">
-                    <div>
+                <div class="span3 reorder-original-bottom">
+                    <div class="margin-bottom-30">
                         <img alt="some image" class="img-circle section-image"
                              src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
                     </div>
@@ -91,14 +91,14 @@
             </div>
             <div class="row-fluid">
                 <div class="span3">
-                    <div>
+                    <div class="margin-bottom-30">
                         <img alt="some image" class="img-circle section-image"
                              src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
                     </div>
                 </div>
                 <div class="span9">
                     <blockquote>
-                        <p class="lead">
+                        <p class="lead left-text-block-styling body-text">
                             {{--Main Content--}}
                             The biodiversity data synthesized for ecoregions include richness and endemism numbers
                             for freshwater fish, amphibians, turtles, and crocodiles, derived in nearly all cases
@@ -119,10 +119,10 @@
                     <small class="light">Applications</small>
                 </h1>
             </div>
-            <div class="row-fluid">
-                <div class="span9">
-                    <blockquote class="pull-right">
-                        <p class="lead">
+            <div class="row-fluid reorder-container">
+                <div class="span9 reorder-original-top">
+                    <blockquote class="pull-right right-text-block-styling">
+                        <p class="lead body-text">
                             The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
                             not always – correspond with those of watersheds (also known as drainage basins or
                             catchments). Within individual ecoregions there will be turnover of species, such as
@@ -134,8 +134,8 @@
                         </p>
                     </blockquote>
                 </div>
-                <div class="span3">
-                    <div>
+                <div class="span3 reorder-original-bottom">
+                    <div class="margin-bottom-30">
                         <img alt="some image" class="img-circle section-image"
                              src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
                     </div>

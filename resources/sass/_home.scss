@@ -1,17 +1,29 @@
 // Home page
+body {
+    font-family: "Helvetica Neue", sans-serif !important;
+    line-height: 1.8 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-banner-text {
+        font-size: 45px;
+        font-weight: 900;
+    }
+}
+
 .main-banner-text {
-    font-size: 52px;
-    font-weight: 900;
+    font-size: 31px;
+    font-weight: 700;
     text-align: center;
-    line-height: 1;
+    margin: 10px !important;
     text-transform: uppercase;
 }
 
 .middle-banner-text {
     font-size: 26px;
-    font-weight: 300;
+    font-weight: 400;
+    margin: 10px !important;
     text-align: center;
-    line-height: 3;
     text-transform: none;
 }
 
@@ -20,6 +32,7 @@
     background-color: #2153b2;
     border-color: #2153b2;
     color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .caption-margin-bottom {
@@ -32,4 +45,20 @@
 
 .half-opacity {
     opacity: 0.5;
+}
+
+.reorder-container {
+    display: table !important;
+}
+
+.reorder-original-top {
+    display: table-footer-group !important;
+}
+
+.reorder-original-bottom {
+    display: table-header-group !important;
+}
+
+.body-text {
+    font-size: 1.0rem !important;
 }
