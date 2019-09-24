@@ -1,7 +1,6 @@
 @extends('layouts.layout')
 
 @section('content')
-    {{--Banner--}}
     <section class="section section-alt">
         <div class="row-fluid">
             <div class="super-hero-unit">
@@ -10,39 +9,32 @@
                          src="{{ asset('/img/assets/feow/mountain-1.jpeg') }}" class="half-opacity">
                     <figcaption class="flex-caption">
                         <h1 class="super animated fadeinup delayedmore">
-                            Contact
+                            Want To Talk?
                         </h1>
                     </figcaption>
                 </figure>
             </div>
         </div>
     </section>
-    {{--Main Content--}}
     <section class="section section-padded">
         <div class="container-fluid">
-            <div class="section-header">
-                <h1>
-                    Want
-                    <small class="light">to talk?</small>
-                </h1>
-            </div>
             <div class="row-fluid">
                 <div>
                     <form action="{{  url('/contact')  }} " method="post" class="contact-form" id="contactForm" novalidate="">
                         {{ csrf_field() }}
                         <div class="controls controls-row">
                             <div class="control-group span6">
-                                <input class="span12 contact-form-input" name="name" placeholder="your name"
+                                <input class="span12 contact-form-input" name="name" placeholder="Your name"
                                        type="text">
                             </div>
                             <div class="control-group span6">
-                                <input class="span12 contact-form-input" name="email" placeholder="your email"
+                                <input class="span12 contact-form-input" name="email" placeholder="Your email"
                                        type="email">
                             </div>
                         </div>
                         <div class="controls controls-row">
                             <div class="control-group span12">
-                                <input class="span12 contact-form-input" name="subject" placeholder="subject"
+                                <input class="span12 contact-form-input" name="subject" placeholder="Subject"
                                        type="text">
                             </div>
                         </div>

@@ -1,8 +1,7 @@
 .contact-form-input {
-    padding: 4px 6px;
-    margin: 0px 0px 12px;
-    border-color: #E2E2E2;
-    border-width: thin;
+    box-shadow: none !important;
+    -webkit-appearance: button !important;
+    margin-bottom: 15px;
 }
 
 .contact-button {
