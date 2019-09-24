@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
@@ -31,7 +33,9 @@ class ContactController extends Controller
         } else {
             Contact::create($request->all());
 
-            Session::flash('message', 'Your message has been sent successfully!');
+            Mail::send(new ContactMail($request));
+
+            Session::flash('message', 'Thank you for contacting us! Your message has been sent successfully.');
             return redirect('/contact');
         }
     }
