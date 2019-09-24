@@ -100,6 +100,9 @@
 @media only screen and (max-width: 1245px) {
   .nav-font {
     font-size: 0.7em; } }
+.mr-zero {
+  margin-right: 0px; }
+
 .contact-form-input {
   margin-bottom: 15px;
   border-color: #F1F1F1;

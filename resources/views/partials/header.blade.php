@@ -11,7 +11,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse capital-letters" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0 nav-font">
+            <ul class="navbar-nav ml-auto mr-zero mt-2 mt-lg-0 nav-font">
                 <li class="nav-item ">
                     <a class="nav-link" href="{{ url('/') }}">Home</a>
                 </li>

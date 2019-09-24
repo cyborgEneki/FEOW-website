@@ -131,6 +131,10 @@
   }
 }
 
+.mr-zero {
+  margin-right: 0px;
+}
+
 .contact-form-input {
   margin-bottom: 15px;
   border-color: #F1F1F1;
