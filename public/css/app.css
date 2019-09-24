@@ -56,6 +56,11 @@
   font-weight: 300;
 }
 
+.home-padding {
+  padding: 0 40px;
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .main-banner-text {
     font-size: 45px;
@@ -65,6 +70,10 @@
   .body-text {
     font-size: 1.25rem;
     font-weight: 300;
+  }
+
+  .home-padding {
+    padding: 0 80px;
   }
 }
 
@@ -84,12 +93,18 @@
   border-right: 5px solid #f2f2f4;
 }
 
+.right-text-block-styling-last {
+  padding: 0 0 0 15px;
+  margin: 0;
+  border-right: 5px solid #f2f2f4;
+}
+
 .margin-bottom-30 {
   margin-bottom: 30px;
 }
 
 .background-padding {
-  padding: 25px;
+  padding: 0 25px;
   width: 100%;
 }
 
@@ -107,9 +122,9 @@
 }
 
 .contact-form-input {
-  box-shadow: none !important;
-  -webkit-appearance: button !important;
   margin-bottom: 15px;
+  border-color: #F1F1F1;
+  border-width: thin;
 }
 
 .contact-button {
@@ -118,8 +133,26 @@
   border-radius: 0px;
   padding: 4px 12px;
   font-weight: 300;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: white;
+}
+
+.section-padded-contact {
+  padding: 40px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-max-height {
+    max-height: 130px;
+  }
+
+  .dark-background-max-height {
+    max-height: 130px;
+  }
+
+  .section-padded-contact {
+    padding: 40px 0 0 0;
+  }
 }
 
 /*!

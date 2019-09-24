@@ -28,7 +28,7 @@
     </section>
     {{--Main Content--}}
     <section class="section section-padded">
-        <div class="container-fluid">
+        <div class="home-padding">
             <p class="body-text text-left">
                 <strong>Freshwater Ecoregions of the World, (FEOW)</strong> provides a new global biogeographic
                 regionalization of

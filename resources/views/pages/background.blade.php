@@ -5,9 +5,9 @@
     <section class="section section-alt">
         <div class="row-fluid">
             <div class="super-hero-unit">
-                <figure class="dark-background">
+                <figure class="dark-background dark-background-max-height">
                     <img alt="river meandering through a shallow valley"
-                         src="{{ asset('/img/assets/feow/bird-1.jpeg') }}" class="half-opacity">
+                         src="{{ asset('/img/assets/feow/bird-1.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
                         <h1 class="super animated fadeinup delayedmore">
                             Background
@@ -121,7 +121,7 @@
             </div>
             <div class="row-fluid reorder-container">
                 <div class="span9 reorder-original-top">
-                    <blockquote class="pull-right right-text-block-styling">
+                    <blockquote class="pull-right right-text-block-styling-last">
                         <p class="body-text">
                             The freshwater ecoregion map encompasses 426 units, whose boundaries generally – though
                             not always – correspond with those of watersheds (also known as drainage basins or

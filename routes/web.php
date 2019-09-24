@@ -11,6 +11,9 @@
 |
 */
 
+use App\Http\Controllers\ContactController;
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
     return view('pages.home');
 });
@@ -55,6 +58,6 @@ Route::get('/bibliography', function () {
     return view('pages.bibliography');
 });
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/contact', 'ContactController@index');
+
+Route::post('/contact', 'ContactController@store');
