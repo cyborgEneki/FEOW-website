@@ -94,6 +94,12 @@
   line-height: 30px;
   padding: 20px 20px 0px 20px; }
 
+.capital-letters {
+  text-transform: uppercase; }
+
+@media only screen and (max-width: 1245px) {
+  .nav-font {
+    font-size: 0.7em; } }
 .contact-form-input {
   margin-bottom: 15px;
   border-color: #F1F1F1;
@@ -113,10 +119,10 @@
 
 @media only screen and (max-width: 600px) {
   .banner-max-height {
-    max-height: 130px; }
+    max-height: 135px; }
 
   .dark-background-max-height {
-    max-height: 130px; }
+    max-height: 135px; }
 
   .section-padded-contact {
     padding: 40px 0 0 0; } }
