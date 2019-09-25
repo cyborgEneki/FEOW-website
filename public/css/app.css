@@ -103,13 +103,13 @@
   margin-bottom: 30px;
 }
 
-.background-padding {
+.body-padding {
   padding: 0 25px;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  .background-padding {
+  .body-padding {
     padding: 0 80px;
   }
 }
@@ -133,6 +133,12 @@
 
 .mr-zero {
   margin-right: 0px;
+}
+
+@media only screen and (max-width: 1245px) {
+  .font-size-1em {
+    font-size: 1em !important;
+  }
 }
 
 .contact-form-input {
@@ -167,6 +173,19 @@
   .section-padded-contact {
     padding: 40px 0 0 0;
   }
+}
+
+.flex-image {
+  width: 100%;
+}
+
+.main-page-image {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-section-padded {
+  padding: 20px 0;
 }
 
 /*!

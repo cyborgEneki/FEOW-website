@@ -81,12 +81,12 @@
 .margin-bottom-30 {
   margin-bottom: 30px; }
 
-.background-padding {
+.body-padding {
   padding: 0 25px;
   width: 100%; }
 
 @media only screen and (min-width: 768px) {
-  .background-padding {
+  .body-padding {
     padding: 0 80px; } }
 .logo-styling {
   font-weight: 900;
@@ -103,6 +103,9 @@
 .mr-zero {
   margin-right: 0px; }
 
+@media only screen and (max-width: 1245px) {
+  .font-size-1em {
+    font-size: 1em !important; } }
 .contact-form-input {
   margin-bottom: 15px;
   border-color: #F1F1F1;
@@ -129,6 +132,16 @@
 
   .section-padded-contact {
     padding: 40px 0 0 0; } }
+.flex-image {
+  width: 100%; }
+
+.main-page-image {
+  display: flex;
+  justify-content: center; }
+
+.custom-section-padded {
+  padding: 20px 0; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

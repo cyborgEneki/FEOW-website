@@ -5,9 +5,9 @@
     <section class="section section-alt">
         <div class="row-fluid">
             <div class="super-hero-unit">
-                <figure class="dark-background">
+                <figure class="dark-background dark-background-max-height">
                     <img alt="river meandering through a shallow valley"
-                         src="{{ asset('/img/assets/feow/river-1.jpeg') }}" class="half-opacity">
+                         src="{{ asset('/img/assets/feow/river-1.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
                         <h1 class="super animated fadeinup delayedmore">
                             Major Habitat Types
@@ -18,9 +18,12 @@
         </div>
     </section>
     {{--Main Content--}}
-    <section class="section section-padded">
-        <div class="container-fluid">
-            <p class="lead text-left">
+    <section class="section custom-section-padded">
+        <div class="body-padding">
+            <div class="main-page-image">
+                <img src="{{ asset('/img/assets/feow/MHT-1.jpg') }}" alt="" class="flex-image">
+            </div>
+            <p class="body-text">
                 The freshwater Major Habitat Types (MHTs) reflect groupings of ecoregions with similar biological,
                 chemical, and physical characteristics and are roughly equivalent to biomes for terrestrial systems.
                 The MHTs refer to the dynamics of ecological systems and the broad habitat structures that define

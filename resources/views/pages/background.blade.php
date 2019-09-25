@@ -19,7 +19,7 @@
     </section>
     {{--Main Content--}}
     <section class="section section-padded">
-        <div class="background-padding">
+        <div class="body-padding">
             <div class="row-fluid">
                 <div class="span3">
                     <div class="margin-bottom-30">

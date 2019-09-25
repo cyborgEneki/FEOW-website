@@ -633,7 +633,7 @@ body {
   -o-border-radius: 0;
   border-radius: 0;
   text-shadow: none;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 #masthead .dropdown-menu a {
   font-style: normal;
