@@ -75,3 +75,20 @@
         padding: 0 80px;
     }
 }
+
+.biodiversity-image-container {
+    padding: 0 40px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .biodiversity-image-container {
+        padding: 0 15px 0 0;
+    }
+}
+
+p.neg-margin-top-20 {
+    margin-top: -20px;
+}

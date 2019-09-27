@@ -26,9 +26,9 @@ Route::get('/global-maps/major-habitat-types', function () {
     return view('pages.major-habitat-types');
 });
 
-Route::get('/global-maps/biodiversity', function () {
-    return view('pages.biodiversity');
-});
+//Route::get('/global-maps/biodiversity', function () {
+//    return view('pages.biodiversity');
+//});
 
 Route::get('/global-maps/threat', function () {
     return view('pages.threat');
@@ -61,3 +61,5 @@ Route::get('/bibliography', function () {
 Route::get('/contact', 'ContactController@index');
 
 Route::post('/contact', 'ContactController@store');
+
+Route::get('/global-maps/biodiversity', 'GlobalMapController@index');

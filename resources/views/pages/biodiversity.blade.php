@@ -5,13 +5,13 @@
     <section class="section section-alt">
         <div class="row-fluid">
             <div class="super-hero-unit">
-                <figure class="dark-background">
+                <figure class="dark-background dark-background-max-height">
                     <img alt="river meandering through a shallow valley"
-                         src="{{ asset('/img/assets/feow/pond-1.jpeg') }}" class="half-opacity">
+                         src="{{ asset('/img/assets/feow/pond-1.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
-                        <h1 class="super animated fadeinup delayedmore">
+                        <p class="super animated fadeinup delayedmore">
                             Biodiversity
-                        </h1>
+                        </p>
                     </figcaption>
                 </figure>
             </div>
@@ -19,10 +19,21 @@
     </section>
     {{--Main Content--}}
     <section class="section section-padded">
-        <div class="container-fluid">
-            <div class="row">
-
-            </div>
+        <div class="biodiversity-image-container">
+            @foreach($maps->chunk(2) as $chunk)
+                <div class="row">
+                    @foreach($chunk as $map)
+                        @if($map->shown == 1)
+                            <div class="col-md-6">
+                                <img alt="{{ $map->title }}"
+                                     src="{{ asset('/img/assets/feow/'. $map->source ) }}"
+                                     class="flex-image">
+                                <p class="text-center neg-margin-top-20">{{ $map->title }}</p>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+            @endforeach
         </div>
     </section>
 @stop
