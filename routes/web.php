@@ -26,13 +26,11 @@ Route::get('/global-maps/major-habitat-types', function () {
     return view('pages.major-habitat-types');
 });
 
-//Route::get('/global-maps/biodiversity', function () {
-//    return view('pages.biodiversity');
-//});
+Route::get('/global-maps/biodiversity', 'GlobalMapController@biodiversityIndex');
+Route::get('/global-maps/biodiversity/freshwater_fish_species_richness', 'BiodiversityController@freshwaterFishSpeciesRichness');
+Route::get('/global-maps/biodiversity/number_of_endemic_freshwater_fish_species', 'BiodiversityController@numberOfEndemicFreshwaterFishSpecies');
 
-Route::get('/global-maps/threat', function () {
-    return view('pages.threat');
-});
+Route::get('/global-maps/threat', 'GlobalMapController@threatIndex');
 
 Route::get('/ecoregions/browse', function () {
     return view('pages.browse');
@@ -61,5 +59,3 @@ Route::get('/bibliography', function () {
 Route::get('/contact', 'ContactController@index');
 
 Route::post('/contact', 'ContactController@store');
-
-Route::get('/global-maps/biodiversity', 'GlobalMapController@index');

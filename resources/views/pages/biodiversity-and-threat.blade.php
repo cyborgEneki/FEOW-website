@@ -10,7 +10,11 @@
                          src="{{ asset('/img/assets/feow/pond-1.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
                         <p class="super animated fadeinup delayedmore">
-                            Biodiversity
+                            @if($type == 'biodiversity')
+                                Biodiversity
+                            @elseif($type == 'threat')
+                                Threat
+                            @endif
                         </p>
                     </figcaption>
                 </figure>
@@ -23,14 +27,14 @@
             @foreach($maps->chunk(2) as $chunk)
                 <div class="row">
                     @foreach($chunk as $map)
-                        @if($map->shown == 1)
-                            <div class="col-md-6">
+                        <div class="col-md-6">
+                            <a href="{{ $url .'/'. $map->ident }}">
                                 <img alt="{{ $map->title }}"
-                                     src="{{ asset('/img/assets/feow/'. $map->source ) }}"
+                                     src="{{ url('/img/assets/feow/'. $map->source ) }}"
                                      class="flex-image">
                                 <p class="text-center neg-margin-top-20">{{ $map->title }}</p>
-                            </div>
-                        @endif
+                            </a>
+                        </div>
                     @endforeach
                 </div>
             @endforeach

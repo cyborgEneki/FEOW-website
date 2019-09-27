@@ -3,16 +3,33 @@
 namespace App\Http\Controllers;
 
 use App\GlobalMap;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
 
 class GlobalMapController extends Controller
 {
-    public function index()
+    public function biodiversityIndex()
     {
-        $maps = GlobalMap::all();
+        $maps = GlobalMap::where('maptype', 'biodiversity')->where('shown', '1')->orderBy('arrange', 'asc')->get();
+        $type = 'biodiversity';
+        $url = Request::url();
 
-        return view('pages.biodiversity', [
-            'maps' => $maps
+        return view('pages.biodiversity-and-threat', [
+            'url' => $url,
+            'maps' => $maps,
+            'type' => $type
+        ]);
+    }
+
+    public function threatIndex()
+    {
+        $maps = GlobalMap::where('maptype', 'threat')->get();
+        $type = 'threat';
+        $url = Request::url();
+
+        return view('pages.biodiversity-and-threat', [
+            'url' => $url,
+            'maps' => $maps,
+            'type' => $type
         ]);
     }
 }

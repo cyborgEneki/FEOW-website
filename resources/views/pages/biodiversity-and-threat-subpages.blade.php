@@ -21,7 +21,7 @@
     <section class="section section-padded">
         <div class="container-fluid">
             <div class="row">
-
+{{ $test }}
             </div>
         </div>
     </section>
