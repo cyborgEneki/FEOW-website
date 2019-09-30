@@ -31,8 +31,6 @@ Route::get('/global-maps/{maptype}', [
     'uses' => 'GlobalMapController@biodiversityIndex'
 ]);
 
-//Route::get('/global-maps/threat', 'GlobalMapController@threatIndex');
-
 Route::get('/global-maps/{type}/{ident}', [
     'as' => 'biodiversity-threat-subpage',
     'uses' => 'GlobalMapController@subpageIndex'
