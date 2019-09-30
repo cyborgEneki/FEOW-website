@@ -27,10 +27,13 @@ Route::get('/global-maps/major-habitat-types', function () {
 });
 
 Route::get('/global-maps/biodiversity', 'GlobalMapController@biodiversityIndex');
-Route::get('/global-maps/biodiversity/freshwater_fish_species_richness', 'BiodiversityController@freshwaterFishSpeciesRichness');
-Route::get('/global-maps/biodiversity/number_of_endemic_freshwater_fish_species', 'BiodiversityController@numberOfEndemicFreshwaterFishSpecies');
 
-Route::get('/global-maps/threat', 'GlobalMapController@threatIndex');
+//Route::get('/global-maps/threat', 'GlobalMapController@threatIndex');
+
+Route::get('/global-maps/{maptype}/{ident}', [
+    'as' => 'subpages',
+    'uses' => 'GlobalMapController@subpageIndex'
+]);
 
 Route::get('/ecoregions/browse', function () {
     return view('pages.browse');

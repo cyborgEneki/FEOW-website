@@ -28,7 +28,7 @@
                 <div class="row">
                     @foreach($chunk as $map)
                         <div class="col-md-6">
-                            <a href="{{ $url .'/'. $map->ident }}">
+                            <a href="{{ route('subpages', ['maptype' => $map->maptype, 'ident' => $map->ident]) }}">
                                 <img alt="{{ $map->title }}"
                                      src="{{ url('/img/assets/feow/'. $map->source ) }}"
                                      class="flex-image">

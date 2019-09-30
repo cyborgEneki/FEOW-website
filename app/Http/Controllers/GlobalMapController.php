@@ -20,16 +20,22 @@ class GlobalMapController extends Controller
         ]);
     }
 
-    public function threatIndex()
-    {
-        $maps = GlobalMap::where('maptype', 'threat')->get();
-        $type = 'threat';
-        $url = Request::url();
+//    public function threatIndex()
+//    {
+//        $maps = GlobalMap::where('shown', '1')->where('maptype', 'threat')->get();
+//        $type = 'threat';
+//        $url = Request::url();
+//
+//        return view('pages.biodiversity-and-threat', [
+//            'url' => $url,
+//            'maps' => $maps,
+//            'type' => $type
+//        ]);
+//    }
 
-        return view('pages.biodiversity-and-threat', [
-            'url' => $url,
-            'maps' => $maps,
-            'type' => $type
-        ]);
+    public function subpageIndex($maptype ,$ident)
+    {
+        $subpage = GlobalMap::where('maptype', $maptype)->where('ident', $ident)->first();
+        return view('pages.biodiversity-and-threat-subpages')->with('subpage', $subpage);
     }
 }
