@@ -26,8 +26,8 @@
                     <div class="dropdown-menu font-size-1em" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ url('/global-maps/major-habitat-types') }}">Major Habitat
                             Types</a>
-                        <a class="dropdown-item" href="{{ url('/global-maps/biodiversity') }}">Biodiversity</a>
-                        <a class="dropdown-item" href="{{ url('/global-maps/threat') }}">Threat</a>
+                        <a class="dropdown-item" href="{{ route('biodiversity-threat', ['type' => 'biodiversity']) }}">Biodiversity</a>
+                        <a class="dropdown-item" href="{{ route('biodiversity-threat', ['type' => 'threat']) }}">Threat</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

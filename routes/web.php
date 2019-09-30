@@ -26,12 +26,15 @@ Route::get('/global-maps/major-habitat-types', function () {
     return view('pages.major-habitat-types');
 });
 
-Route::get('/global-maps/biodiversity', 'GlobalMapController@biodiversityIndex');
+Route::get('/global-maps/{maptype}', [
+    'as' => 'biodiversity-threat',
+    'uses' => 'GlobalMapController@biodiversityIndex'
+]);
 
 //Route::get('/global-maps/threat', 'GlobalMapController@threatIndex');
 
-Route::get('/global-maps/{maptype}/{ident}', [
-    'as' => 'subpages',
+Route::get('/global-maps/{type}/{ident}', [
+    'as' => 'biodiversity-threat-subpage',
     'uses' => 'GlobalMapController@subpageIndex'
 ]);
 

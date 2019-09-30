@@ -72,6 +72,12 @@
 p.neg-margin-top-20 {
   margin-top: -20px; }
 
+#subpage-text {
+  font-size: 40px; }
+
+@media only screen and (max-width: 600px) {
+  #subpage-text {
+    font-size: 20px; } }
 .section-image {
   width: 100%; }
 

@@ -9,7 +9,7 @@
                     <img alt="river meandering through a shallow valley"
                          src="{{ asset('/img/assets/feow/mountain-1.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
-                        <h1 class="super animated fadeinup delayedmore">
+                        <h1 class="super animated fadeinup delayedmore" id="subpage-text">
                             {{ $subpage->title }}
                         </h1>
                     </figcaption>
