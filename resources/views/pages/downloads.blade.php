@@ -5,9 +5,9 @@
     <section class="section section-alt">
         <div class="row-fluid">
             <div class="super-hero-unit">
-                <figure class="dark-background">
+                <figure class="dark-background dark-background-max-height">
                     <img alt="river meandering through a shallow valley"
-                         src="{{ asset('/img/assets/feow/pond-2.jpeg') }}" class="half-opacity">
+                         src="{{ asset('/img/assets/feow/pond-2.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
                         <h1 class="super animated fadeinup delayedmore">
                             Downloads
@@ -18,11 +18,9 @@
         </div>
     </section>
     {{--Main Content--}}
-    <section class="section section-padded">
-        <div class="container-fluid">
-            <div class="row">
+    <section class="section custom-section-padded">
+        <div class="body-padding">
 
-            </div>
         </div>
     </section>
 @stop
