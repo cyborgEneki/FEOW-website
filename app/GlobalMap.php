@@ -13,12 +13,4 @@ class GlobalMap extends Model
         'shown',
         'arrange'
     ];
-
-    protected $fillable = [
-        'source',
-        'title',
-        'ident',
-        'description',
-        'maptype'
-    ];
 }

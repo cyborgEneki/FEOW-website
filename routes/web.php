@@ -25,12 +25,10 @@ Route::get('/background', function () {
 Route::get('/global-maps/major-habitat-types', function () {
     return view('pages.major-habitat-types');
 });
-
 Route::get('/global-maps/{maptype}', [
     'as' => 'biodiversity-threat',
     'uses' => 'GlobalMapController@biodiversityIndex'
 ]);
-
 Route::get('/global-maps/{type}/{ident}', [
     'as' => 'biodiversity-threat-subpage',
     'uses' => 'GlobalMapController@subpageIndex'
@@ -39,11 +37,9 @@ Route::get('/global-maps/{type}/{ident}', [
 Route::get('/ecoregions/browse', function () {
     return view('pages.browse');
 });
-
 Route::get('/ecoregions/interactive-map', function () {
     return view('pages.interactive-map');
 });
-
 Route::get('/ecoregions/search', function () {
     return view('pages.search');
 });
@@ -54,12 +50,13 @@ Route::get('/downloads', function () {
 
 Route::get('/contributors', 'ContributorController@index');
 
-Route::get('/bibliography', function () {
-    return view('pages.bibliography');
-});
+Route::get('/bibliography', 'BibliographyController@index');
+Route::get('/bibliography/{letter}', [
+    'as' => 'wild',
+    'uses' => 'BibliographyController@letter'
+]);
 
 Route::get('/contact', 'ContactController@index');
-
 Route::post('/contact', 'ContactController@store');
 
 Route::any('/{any}', function () {

@@ -30,7 +30,7 @@
                     The page you requested could not be found.
                 </p>
                 <div class="text-center">
-                    <a class="btn btn-primary btn-large pull-center">
+                    <a class="btn btn-primary btn-large pull-center" href="{{ url('/') }}">
                         <i class="icon-home"></i>
                         Go Back Home
                     </a>

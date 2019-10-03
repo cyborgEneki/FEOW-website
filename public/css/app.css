@@ -128,6 +128,11 @@ p.neg-margin-top-20 {
   color: #235ac7;
 }
 
+.no-list-style {
+  list-style: none;
+  margin-left: -40px;
+}
+
 .section-image {
   width: 100%;
 }

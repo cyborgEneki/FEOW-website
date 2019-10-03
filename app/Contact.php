@@ -8,13 +8,6 @@ class Contact extends Model
 {
     protected $table = 'contacts';
 
-    protected $fillable = array(
-        'name',
-        'email',
-        'subject',
-        'message'
-    );
-
     protected $guarded = array(
         'id',
         'created_at',
