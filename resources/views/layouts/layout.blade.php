@@ -61,6 +61,15 @@
 </script>
 
 <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+            placement : 'top',
+            trigger : 'hover'
+        });
+    });
+</script>
+
+<script type="text/javascript">
     if (typeof gaJsHost == 'undefined') {
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

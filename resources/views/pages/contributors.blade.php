@@ -20,7 +20,8 @@
     {{--Main Content--}}
     <section class="section custom-section-padded">
         <div class="body-padding">
-            <p id="top">Contributors to Freshwater Ecoregions of the World Includes individuals who have either delineated
+            <p id="top">Contributors to Freshwater Ecoregions of the World Includes individuals who have either
+                delineated
                 ecoregions, reviewed ecoregion delineations, contributed or reviewed species lists, or authored or
                 reviewed ecoregion descriptions. Major contributors are highlighted with short biographies.</p>
 
@@ -37,15 +38,20 @@
                     <option value="#interns">Interns</option>
                 </select>
             </p>
-            <h1 class="contributors-text" id="africa">Africa (Contributors to the volume, Freshwater Ecoregions of Africa and Madagascar)</h1>
+            <h1 class="contributors-text" id="africa">Africa (Contributors to the volume, Freshwater Ecoregions of
+                Africa and Madagascar)</h1>
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 1)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"@endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="latin">Latin America & the Caribbean</h1>
             <ol>
@@ -55,7 +61,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="eurasia">Eurasia</h1>
             <ol>
@@ -65,7 +73,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="australasia">Australasia and Oceania</h1>
             <ol>
@@ -75,7 +85,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="n-america">North America</h1>
             <ol>
@@ -85,7 +97,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="g-datasets">Global Datasets</h1>
             <ol>
@@ -95,7 +109,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="wwf-tnc">WWF and TNC staff</h1>
             <ol>
@@ -105,7 +121,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
 
             <h1 class="contributors-text" id="interns">Interns</h1>
             <ol>
@@ -115,7 +133,9 @@
                     @endif
                 @endforeach
             </ol>
-            <a href="#top">Back to top</a>
+            <div class="contributors-back-to-top-link">
+                <a href="#top">Back to top</a>
+            </div>
         </div>
     </section>
 @stop
