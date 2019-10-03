@@ -43,7 +43,8 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 1)
-                        <li @if($contributor->body != null)class="contributors-in-list-links"@endif data-toggle="popover"
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
                             title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
                             data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
@@ -57,7 +58,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 2)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
@@ -69,7 +73,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 3)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
@@ -81,7 +88,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 4)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
@@ -93,7 +103,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 5)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
@@ -105,7 +118,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 6)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
@@ -117,7 +133,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 7)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
@@ -129,7 +148,10 @@
             <ol>
                 @foreach($contributors as $contributor)
                     @if ($contributor->category == 8)
-                        <li>{{ $contributor->contributor }}</li>
+                        <li @if($contributor->body != null)class="contributors-in-list-links"
+                            @endif data-toggle="popover"
+                            title="@if($contributor->header != null && $contributor->header != '.'){{ $contributor->header }}@endif"
+                            data-content="@if($contributor->body != null){{ $contributor->image }}{{ $contributor->body }}@endif">{{ $contributor->contributor }}</li>
                     @endif
                 @endforeach
             </ol>
