@@ -54,6 +54,13 @@
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script type="text/javascript">
+    function handleSelect(elm)
+    {
+        window.location = elm.value;
+    }
+</script>
+
+<script type="text/javascript">
     if (typeof gaJsHost == 'undefined') {
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

@@ -102,3 +102,17 @@ p.neg-margin-top-20 {
         font-size: 20px;
     }
 }
+
+// Contributors
+
+.contributors-text {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .contributors-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

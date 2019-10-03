@@ -52,9 +52,7 @@ Route::get('/downloads', function () {
     return view('pages.downloads');
 });
 
-Route::get('/contributors', function () {
-    return view('pages.contributors');
-});
+Route::get('/contributors', 'ContributorController@index');
 
 Route::get('/bibliography', function () {
     return view('pages.bibliography');
