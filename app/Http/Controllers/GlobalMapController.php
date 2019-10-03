@@ -9,11 +9,11 @@ class GlobalMapController extends Controller
 {
     public function biodiversityIndex($type)
     {
-        if($type == 'biodiversity') {
-            $maps = GlobalMap::where('maptype', 'biodiversity')->where('shown', '1')->orderBy('arrange', 'asc')->get();
+        if ($type == 'biodiversity' || $type == 'threat'){
+            $maps = GlobalMap::where('maptype', $type)->where('shown', '1')->orderBy('arrange', 'asc')->get();
         }
-        if($type == 'threat') {
-            $maps = GlobalMap::where('maptype', 'threat')->where('shown', '1')->orderBy('arrange', 'asc')->get();
+        else {
+            return view('pages.404');
         }
 
         return view('pages.biodiversity-and-threat', [
@@ -22,7 +22,7 @@ class GlobalMapController extends Controller
         ]);
     }
 
-    public function subpageIndex($maptype ,$ident)
+    public function subpageIndex($maptype, $ident)
     {
         $subpage = GlobalMap::where('maptype', $maptype)->where('ident', $ident)->first();
         return view('pages.biodiversity-and-threat-subpage')->with('subpage', $subpage);

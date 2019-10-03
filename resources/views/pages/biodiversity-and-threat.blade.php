@@ -10,11 +10,7 @@
                          src="{{ asset('/img/assets/feow/pond-1.jpeg') }}" class="half-opacity banner-max-height">
                     <figcaption class="flex-caption">
                         <p class="super animated fadeinup delayedmore">
-                            @if($type == 'biodiversity')
-                                Biodiversity
-                            @elseif($type == 'threat')
-                                Threat
-                            @endif
+                            {{ $type }}
                         </p>
                     </figcaption>
                 </figure>
@@ -28,7 +24,7 @@
                 <div class="row">
                     @foreach($chunk as $map)
                         <div class="col-md-6">
-                            <a href="{{ route('biodiversity-threat-subpage', ['maptype' => $map->maptype, 'ident' => $map->ident]) }}">
+                            <a href="{{ route('biodiversity-threat-subpage', ['type' => $map->maptype, 'ident' => $map->ident]) }}">
                                 <img alt="{{ $map->title }}"
                                      src="{{ url('/img/assets/feow/'. $map->source ) }}"
                                      class="flex-image">

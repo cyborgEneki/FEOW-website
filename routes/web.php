@@ -61,3 +61,7 @@ Route::get('/bibliography', function () {
 Route::get('/contact', 'ContactController@index');
 
 Route::post('/contact', 'ContactController@store');
+
+Route::any('/{any}', function () {
+    return view('pages.404');
+})->where('any', '.*');
