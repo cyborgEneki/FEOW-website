@@ -51,7 +51,31 @@
             </div>
             <ul class="no-list-style">
                 @foreach($bibliography as $each)
-                    <li>{{ $each->Author }}</li>
+                    @if($each->Author != null)
+                        <li>
+                            {{ $each->Author }}
+                            @if($each->Year != null)
+                                ({{ $each->Year }})
+                            @endif
+                            "{{ $each->Title }}".
+                            "{{ $each->Secondary_Author }}"
+                            @if($each->Secondary_Title)
+                                In <u>{{ $each->Secondary_Title }}</u>
+                            @endif
+                            @if($each->Volume)
+                                (Vol. <strong>{{ $each->Volume }}</strong>
+                            @endif
+                            {{ $each->Pages }})
+                            @if($each->Number != null)
+                                ({{ $each->Number }})
+                            @endif
+                            @if($each->Place_Published != null)
+                                {{ $each->Place_Published }}:
+                            @endif
+                            {{ $each->Publisher }}
+                        </li>
+                        <br>
+                    @endif
                 @endforeach
             </ul>
         </div>
