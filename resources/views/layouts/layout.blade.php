@@ -52,6 +52,7 @@
 <script src="{{ asset('/js/script.js') }}" type="text/javascript"></script>
 <script src="{{ asset('/js/jquery.form.js') }}" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://kit.fontawesome.com/7400ad2529.js" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
     function handleSelect(elm)

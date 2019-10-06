@@ -44,9 +44,7 @@ Route::get('/ecoregions/search', function () {
     return view('pages.search');
 });
 
-Route::get('/downloads', function () {
-    return view('pages.downloads');
-});
+Route::get('/downloads', 'DownloadController@index');
 
 Route::get('/contributors', 'ContributorController@index');
 

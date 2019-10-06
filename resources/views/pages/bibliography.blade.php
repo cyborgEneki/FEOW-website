@@ -51,31 +51,31 @@
             </div>
             <ul class="no-list-style">
                 @foreach($bibliography as $each)
-                    @if($each->Author != null)
-                        <li>
-                            {{ $each->Author }}
-                            @if($each->Year != null)
-                                ({{ $each->Year }})
-                            @endif
-                            "{{ $each->Title }}".
-                            "{{ $each->Secondary_Author }}"
-                            @if($each->Secondary_Title)
-                                In <u>{{ $each->Secondary_Title }}</u>
-                            @endif
-                            @if($each->Volume)
-                                (Vol. <strong>{{ $each->Volume }}</strong>
-                            @endif
-                            {{ $each->Pages }})
-                            @if($each->Number != null)
-                                ({{ $each->Number }})
-                            @endif
-                            @if($each->Place_Published != null)
-                                {{ $each->Place_Published }}:
-                            @endif
-                            {{ $each->Publisher }}
-                        </li>
-                        <br>
-                    @endif
+                    <li>
+                        @if($each->author != null)
+                            {{ $each->author }}
+                        @endif
+                        @if($each->year != null)
+                            ({{ $each->year }})
+                        @endif
+                        @if($each->title != null)
+                            "{{ $each->title }}"
+                        @endif
+                        @if($each->journal != null)
+                            "{{ $each->journal }}"
+                        @endif
+                        @if($each->volume)
+                            Vol. <strong>{{ $each->volume }}</strong>
+                        @endif
+                        @if($each->number != null)
+                            ({{ $each->number }})
+                        @endif
+                        @if($each->pages != null)
+                            pp. {{ $each->pages }}
+                        @endif
+
+                    </li>
+                    <br>
                 @endforeach
             </ul>
         </div>

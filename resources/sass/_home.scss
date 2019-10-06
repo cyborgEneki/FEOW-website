@@ -125,11 +125,16 @@ p.neg-margin-top-20 {
 
 .contributors-in-list-links {
     color: #235ac7;
+    padding: 0 5px;
 }
 
 // Bibliography
 
 .no-list-style {
     list-style: none;
-    margin-left: -40px;
+    //margin-left: -40px;
+    text-align:left;
+    padding:0 10px;
+    text-indent: -3em;
+    margin-left: 3em;
 }

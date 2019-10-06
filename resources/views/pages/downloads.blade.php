@@ -20,7 +20,11 @@
     {{--Main Content--}}
     <section class="section custom-section-padded">
         <div class="body-padding">
-
+            @foreach ($downloads as $download)
+                <p><strong>{{ $download->title }}<a href="{{ asset('/img/assets/feow/'.$download->link) }}" download><i class="fas fa-cloud-download-alt"></i></a></strong></p>
+                <p>{!! $download->description !!}</p>
+                <br>
+            @endforeach
         </div>
     </section>
 @stop

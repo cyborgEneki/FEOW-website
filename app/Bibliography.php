@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bibliography extends Model
 {
-    protected $table = 'bibliography_bup07302013';
+    protected $table = 'bibliography';
 
     protected $guarded = array('id');
 }
