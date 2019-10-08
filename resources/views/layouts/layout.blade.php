@@ -16,6 +16,7 @@
     <![endif]-->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css">
     <link href="{{ asset('/img/favicon.ico') }}" rel="shortcut icon">
     <link href="{{ asset('/img/apple-touch-icon-144x144-precomposed.png') }}" rel="apple-touch-icon-precomposed"
           sizes="144x144">
@@ -89,5 +90,34 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
+<script src="https://js.arcgis.com/4.12/"></script>
+<script>
+    require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/layers/FeatureLayer"
+    ], function(Map, MapView, FeatureLayer) {
 
+        var map = new Map({
+            basemap: "topo-vector"
+        });
+
+        var view = new MapView({
+            container: "viewDiv",
+            map: map,
+            center: [14.20004, 13.23047], // longitude, latitude
+            zoom: 3
+        });
+        var popupEcoregion = {
+            "title": "Ecoregion: {ECOREGION}",
+            "content": "<b>Ecoregion ID:</b> {ECO_ID}<br><br><a href='/ecoregions/details/{ECO_ID}'>More Details</a>"
+        }
+        var feowLayer = new FeatureLayer({
+            url: "https://maps.wwfus.org/server/rest/services/FEOW/feowhs_011313/MapServer",
+            outFields: ["ECOREGION", "ECO_ID"],
+            popupTemplate: popupEcoregion
+        });
+        map.add(feowLayer);
+    });
+</script>
 </body>

@@ -20,6 +20,7 @@
     {{--Main Content--}}
     <section class="section section-padded">
         <div class="container-fluid">
+            <div id="viewDiv"></div>
         </div>
     </section>
 @stop
