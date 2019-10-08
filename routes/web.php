@@ -34,15 +34,20 @@ Route::get('/global-maps/{type}/{ident}', [
     'uses' => 'GlobalMapController@subpageIndex'
 ]);
 
-Route::get('/ecoregions/browse', function () {
-    return view('pages.browse');
-});
+Route::get('/ecoregions/browse', [
+    'as' => 'ecoregions',
+    'uses' => 'EcoregionController@index'
+]);
+Route::post('/ecoregions/browse', [
+    'as' => 'ecoregions',
+    'uses' => 'EcoregionController@search'
+]);
 Route::get('/ecoregions/interactive-map', function () {
     return view('pages.interactive-map');
 });
-Route::get('/ecoregions/search', function () {
-    return view('pages.search');
-});
+//Route::get('/ecoregions/search', function () {
+//    return view('pages.search');
+//});
 
 Route::get('/downloads', 'DownloadController@index');
 
