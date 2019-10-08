@@ -20,9 +20,6 @@
     {{--Main Content--}}
     <section class="section section-padded">
         <div class="container-fluid">
-            <div class="row">
-
-            </div>
         </div>
     </section>
 @stop

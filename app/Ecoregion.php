@@ -18,4 +18,9 @@ class Ecoregion extends Model
     {
         return $this->belongsTo(Mht::class, 'mht');
     }
+
+    public function references()
+    {
+        return $this->belongsToMany(Bibliography::class, 'ecoregionreference', 'eco_id', 'ref_id');
+    }
 }

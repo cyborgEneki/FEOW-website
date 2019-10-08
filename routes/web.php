@@ -45,9 +45,10 @@ Route::post('/ecoregions/browse', [
 Route::get('/ecoregions/interactive-map', function () {
     return view('pages.interactive-map');
 });
-//Route::get('/ecoregions/search', function () {
-//    return view('pages.search');
-//});
+Route::get('/ecoregions/details/{id}', [
+    'as' => 'ecoregion-details',
+    'uses' => 'EcoregionController@details'
+]);
 
 Route::get('/downloads', 'DownloadController@index');
 

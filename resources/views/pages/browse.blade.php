@@ -39,15 +39,21 @@
                     </form>
                 </div>
                 <div class="table-responsive">
-                    <table class="table table-bordered"
-                           id="table"
-                           data-toggle="table">
+                    <table class="table table-bordered" id="table" data-toggle="table">
                         <thead>
                         <tr>
-                            <th scope="col" data-field="id" data-sortable="true" data-sort-name="id" data-sort-order="desc">ID</th>
-                            <th scope="col" data-field="realmd" data-sortable="true" data-sort-name="realmd" data-sort-order="desc">Realm</th>
-                            <th scope="col" data-field="realm" data-sortable="true" data-sort-name="realm" data-sort-order="desc">Major Habitat Type</th>
-                            <th scope="col" data-field="eco_name" data-sortable="true" data-sort-name="eco_name" data-sort-order="desc">Ecoregion</th>
+                            <th scope="col" data-field="id" data-sortable="true" data-sort-name="id"
+                                data-sort-order="desc">ID
+                            </th>
+                            <th scope="col" data-field="realmd" data-sortable="true" data-sort-name="realmd"
+                                data-sort-order="desc">Realm
+                            </th>
+                            <th scope="col" data-field="realm" data-sortable="true" data-sort-name="realm"
+                                data-sort-order="desc">Major Habitat Type
+                            </th>
+                            <th scope="col" data-field="eco_name" data-sortable="true" data-sort-name="eco_name"
+                                data-sort-order="desc">Ecoregion
+                            </th>
                         </tr>
                         </thead>
                         <tbody>
@@ -56,11 +62,16 @@
                                 <td>{{ $ecoregion->id }}</td>
                                 <td>{{ $ecoregion->realmd }}</td>
                                 <td>{{ $ecoregion->present()->getMajorHabitatType }}</td>
-                                <td>{{ $ecoregion->eco_name }}</td>
+                                <td>
+                                    <a href="{{ route('ecoregion-details', ['id' => $ecoregion->id]) }}">
+                                        {{ $ecoregion->eco_name }}
+                                    </a>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
                     </table>
+                    <div class="center-block-content">{{ $ecoregions->links() }}</div>
                 </div>
             </div>
         </div>

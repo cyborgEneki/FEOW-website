@@ -102,6 +102,13 @@ p.neg-margin-top-20 {
   text-indent: -3em;
   margin-left: 3em; }
 
+.center-block-content {
+  display: flex;
+  justify-content: center; }
+
+.padding-20 {
+  padding: 20px; }
+
 .section-image {
   width: 100%; }
 

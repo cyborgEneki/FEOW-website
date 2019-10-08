@@ -10,7 +10,7 @@ class EcoregionController extends Controller
 {
     public function index()
     {
-        $ecoregions = Ecoregion::all();
+        $ecoregions = Ecoregion::paginate(15);
         $searchResults = 'false';
         return view('pages.browse')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
     }
@@ -24,5 +24,11 @@ class EcoregionController extends Controller
             Session::flash('message', 'No record matched. Try to search again.');;
         }
         return view('pages.browse')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
+    }
+
+    public function details($id)
+    {
+        $references = Ecoregion::with(['references', 'mhts'])->findOrFail($id);
+        return view('pages.ecoregion-details')->with(['references' => $references]);
     }
 }
