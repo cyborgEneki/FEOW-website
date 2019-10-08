@@ -1,15 +1,13 @@
-@extends('layouts.layout')
-
-@section('content')
-    {{--Main Content--}}
-    <section class="section section-padded">
-        <div class="container-fluid">
-            <div id="viewDiv"></div>
-        </div>
-    </section>
-@stop
-
-@section('scripts')
+<head>
+    <style>
+        html, body, #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.12/"></script>
     <script>
         require([
@@ -40,4 +38,7 @@
             map.add(feowLayer);
         });
     </script>
-@stop
+</head>
+<body>
+<div id="viewDiv"></div>
+</body>
