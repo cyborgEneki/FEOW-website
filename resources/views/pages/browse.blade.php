@@ -55,7 +55,7 @@
                             <tr>
                                 <td>{{ $ecoregion->id }}</td>
                                 <td>{{ $ecoregion->realmd }}</td>
-                                <td>{{ $ecoregion->realm }}</td>
+                                <td>{{ $ecoregion->present()->getMajorHabitatType }}</td>
                                 <td>{{ $ecoregion->eco_name }}</td>
                             </tr>
                         @endforeach
