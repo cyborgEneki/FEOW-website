@@ -1,5 +1,14 @@
 @extends('layouts.layout')
 
+@section('content')
+    {{--Main Content--}}
+    <section class="section section-padded">
+        <div class="container-fluid">
+            <div id="viewDiv"></div>
+        </div>
+    </section>
+@stop
+
 @section('scripts')
     <script src="https://js.arcgis.com/4.12/"></script>
     <script>
