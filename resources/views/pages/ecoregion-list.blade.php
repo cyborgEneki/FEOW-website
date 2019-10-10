@@ -10,7 +10,7 @@
                          src="{{ asset('/img/assets/feow/bird-2.jpeg') }}" class="half-opacity">
                     <figcaption class="flex-caption">
                         <h1 class="super animated fadeinup delayedmore">
-                            Browse
+                            List
                         </h1>
                     </figcaption>
                 </figure>
@@ -27,7 +27,7 @@
             @endif
             <div class="card">
                 <div class="card-header">
-                    Ecoregions
+                    <strong>Ecoregions</strong>
                     @if($searchResults == 'true')<a href="{{ route('ecoregions-list') }}">
                         <button class="float-right btn btn-outline-success my-2 my-sm-0" type="button">Back</button>
                     </a>@endif
@@ -71,7 +71,7 @@
                         @endforeach
                         </tbody>
                     </table>
-                    <div class="center-block-content">{{ $ecoregions->links() }}</div>
+                    <div class="text-center">{{ $ecoregions->links() }}</div>
                 </div>
             </div>
         </div>

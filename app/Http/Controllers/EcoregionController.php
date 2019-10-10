@@ -12,7 +12,7 @@ class EcoregionController extends Controller
     {
         $ecoregions = Ecoregion::paginate(15);
         $searchResults = 'false';
-        return view('pages.ecoregions-list')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
+        return view('pages.ecoregion-list')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
     }
 
     public function search(Request $request)
@@ -23,7 +23,7 @@ class EcoregionController extends Controller
         if (count($ecoregions) == 0) {
             Session::flash('message', 'No record matched. Try to search again.');;
         }
-        return view('pages.ecoregions-list')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
+        return view('pages.ecoregion-list')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
     }
 
     public function details($id)

@@ -7,6 +7,13 @@
             <p class="ecoregions-details-heading"><strong>{{ $references->eco_name }}</strong></p>
             <div style="height: 300px; background-color: aliceblue;"></div>
             <br>
+            <div class="card">
+                <div class="card-header">
+                    Biodiversity
+                </div>
+                <div style="height: 300px; background-color: aliceblue;"></div>
+            </div>
+            <br>
             <div class="container">
                 <div class="row">
                     <div class="col-4">
