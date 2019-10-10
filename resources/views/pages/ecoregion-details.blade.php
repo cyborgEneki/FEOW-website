@@ -26,36 +26,6 @@
     <link href="{{ asset('/css/theme.css') }}" media="screen" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('/css/fonts.css') }}" media="screen" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css">
-    <script src="https://js.arcgis.com/4.12/"></script>
-    <script>
-        require([
-            "esri/Map",
-            "esri/views/MapView",
-            "esri/layers/FeatureLayer"
-        ], function (Map, MapView, FeatureLayer) {
-
-            var map = new Map({
-                basemap: "topo-vector"
-            });
-
-            var view = new MapView({
-                container: "viewDiv",
-                map: map,
-                center: [14.20004, 13.23047], // longitude, latitude
-                zoom: 3
-            });
-            var popupEcoregion = {
-                "title": "Ecoregion: {ECOREGION}",
-                "content": "<b>Ecoregion ID:</b> {ECO_ID}<br><br><a href='/ecoregions/details/{ECO_ID}'>More Details</a>"
-            }
-            var feowLayer = new FeatureLayer({
-                url: "https://maps.wwfus.org/server/rest/services/FEOW/feowhs_011313/MapServer",
-                outFields: ["ECOREGION", "ECO_ID"],
-                popupTemplate: popupEcoregion
-            });
-            map.add(feowLayer);
-        });
-    </script>
 </head>
 <body id="body-formatting">
 <div class="wrapper">
@@ -63,13 +33,13 @@
     @include('partials.header')
     <div id="content" role="main">
         <section class="section custom-section-padded">
-            <div class="body-padding">
+            <div class="body-padding body-text">
                 <p class="ecoregions-details-heading"><strong>{{ $references->eco_name }}</strong></p>
                 <div id="viewDiv" style="height: 300px"></div>
                 <br>
                 <div class="card">
                     <div class="card-header">
-                        Biodiversity
+                        <p class="ecoregions-details-heading"><strong>Biodiversity</strong></p>
                     </div>
                     <div style="height: 300px; background-color: aliceblue;"></div>
                 </div>
@@ -77,18 +47,18 @@
                 <div class="container max-width-1180">
                     <div class="row margin-left-0">
                         <div class="col-sm-6">
-                            <p class="ecoregions-details-heading">ID</p>
+                            <p class="ecoregions-details-heading"><strong>ID</strong></p>
                             <hr>
                             {{ $references->id }}
                             <br><br>
                             @if($references->author != null)
-                                <p class="ecoregions-details-heading">Author(s)</p>
+                                <p class="ecoregions-details-heading"><strong>Author(s)</strong></p>
                                 <hr>
                                 {!! $references->author !!}
                                 <br>
                             @endif
                             @if($references->countries != null)
-                                <p class="ecoregions-details-heading">Countries</p>
+                                <p class="ecoregions-details-heading"><strong>Countries</strong></p>
                                 <hr>
                                 @foreach($references->countries as $country)
                                     {!! $country->country !!}
@@ -97,7 +67,7 @@
                                 <br>
                             @endif
                             @if($references->reviewers != null)
-                                <p class="ecoregions-details-heading">Reviewer(s)</p>
+                                <p class="ecoregions-details-heading"><strong>Reviewer(s)</strong></p>
                                 <hr>
                                 {!! $references->reviewers !!}
                                 <br>
@@ -106,21 +76,22 @@
 
                         <div class="col-sm-6">
                             @if($references->mht != null)
-                                <p class="ecoregions-details-heading">Major Habitat Type</p>
+                                <p class="ecoregions-details-heading"><strong>Major Habitat Type</strong></p>
                                 <hr>
                                 {{ $references->present()->getMajorHabitatType }}
                                 <br><br>
                             @endif
                             @if($references->drainages != null)
-                                <p class="ecoregions-details-heading">Drainages flowing into</p>
+                                <p class="ecoregions-details-heading"><strong>Drainages flowing into</strong></p>
                                 <hr>
                                 {!! $references->drainages !!}
                                 <br>
                             @endif
                             @if($references->main_rivers != null)
-                                <p class="ecoregions-details-heading">Main rivers to other water bodies</p>
+                                <p class="ecoregions-details-heading"><strong>Main rivers to other water bodies</strong>
+                                </p>
                                 <hr>
-                                    {!! $references->main_rivers !!}
+                                {!! $references->main_rivers !!}
                                 <br><br>
                             @endif
                         </div>
@@ -638,11 +609,48 @@
                     </div>
                 </div>
             </div>
+        </section>
     </div>
-    </section>
-</div>
 
 </div>
 
 @include('partials.footer')
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+<script src="https://js.arcgis.com/4.12/"></script>
+<script>
+    require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/layers/FeatureLayer"
+    ], function (Map, MapView, FeatureLayer) {
+
+        var map = new Map({
+            basemap: "topo-vector"
+        });
+
+        var view = new MapView({
+            container: "viewDiv",
+            map: map,
+            center: [14.20004, 13.23047], // longitude, latitude
+            zoom: 3
+        });
+        var popupEcoregion = {
+            "title": "Ecoregion: {ECOREGION}",
+            "content": "<b>Ecoregion ID:</b> {ECO_ID}<br><br><a href='/ecoregions/details/{ECO_ID}'>More Details</a>"
+        }
+        var feowLayer = new FeatureLayer({
+            url: "https://maps.wwfus.org/server/rest/services/FEOW/feowhs_011313/MapServer",
+            outFields: ["ECOREGION", "ECO_ID"],
+            popupTemplate: popupEcoregion
+        });
+        map.add(feowLayer);
+    });
+</script>
 </body>

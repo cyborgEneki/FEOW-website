@@ -19,7 +19,7 @@
     </section>
     {{--Main Content--}}
     <section class="section custom-section-padded">
-        <div class="body-padding">
+        <div class="body-padding body-text">
             <p id="top">Contributors to Freshwater Ecoregions of the World Includes individuals who have either
                 delineated
                 ecoregions, reviewed ecoregion delineations, contributed or reviewed species lists, or authored or

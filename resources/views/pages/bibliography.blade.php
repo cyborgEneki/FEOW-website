@@ -19,7 +19,7 @@
     </section>
     {{--Main Content--}}
     <section class="section custom-section-padded">
-        <div class="body-padding">
+        <div class="body-padding body-text">
             <div>
                 <a href="{{ url('/bibliography') }}" class="contributors-in-list-links btn btn-light">All</a>
                 <a href="{{ route('wild', ['letter' => 'A']) }}" class="contributors-in-list-links btn btn-light">A</a>

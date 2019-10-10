@@ -19,7 +19,7 @@
     </section>
     {{--Main Content--}}
     <section class="section custom-section-padded">
-        <div class="body-padding">
+        <div class="body-padding body-text">
             @if (session('message'))
                 <div class="alert alert-success text-center">
                     {{ session('message') }}

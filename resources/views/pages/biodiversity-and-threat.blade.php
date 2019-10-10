@@ -19,7 +19,7 @@
     </section>
     {{--Main Content--}}
     <section class="section section-padded">
-        <div class="biodiversity-image-container">
+        <div class="biodiversity-image-container body-text">
             @foreach($maps->chunk(2) as $chunk)
                 <div class="row">
                     @foreach($chunk as $map)
