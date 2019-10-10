@@ -103,6 +103,14 @@ p.neg-margin-top-20 {
     }
 }
 
+.margin-left-0 {
+    margin-left: 0px !important;
+}
+
+.max-width-1180 {
+    max-width: 1080px !important;
+}
+
 // Contributors
 
 .contributors-text {
@@ -147,6 +155,7 @@ p.neg-margin-top-20 {
 
 .ecoregions-details-heading {
     font-size: 20px;
+    margin-bottom: 0px;
 }
 
 .ecoregions-details-col-1 {
@@ -165,4 +174,8 @@ p.neg-margin-top-20 {
 
 .ecoregions-table-line-spacing {
     line-height: 1.8;
+}
+
+.ecoregions-references-card {
+    margin-bottom: 20px;
 }

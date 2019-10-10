@@ -74,18 +74,18 @@
                     <div style="height: 300px; background-color: aliceblue;"></div>
                 </div>
                 <br>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
+                <div class="container max-width-1180">
+                    <div class="row margin-left-0">
+                        <div class="col-sm-6">
                             <p class="ecoregions-details-heading">ID</p>
                             <hr>
                             {{ $references->id }}
                             <br><br>
-                            @if($references->mht != null)
-                                <p class="ecoregions-details-heading">Major Habitat Type</p>
+                            @if($references->author != null)
+                                <p class="ecoregions-details-heading">Author(s)</p>
                                 <hr>
-                                {{ $references->present()->getMajorHabitatType }}
-                                <br><br>
+                                {!! $references->author !!}
+                                <br>
                             @endif
                             @if($references->countries != null)
                                 <p class="ecoregions-details-heading">Countries</p>
@@ -96,12 +96,6 @@
                                 @endforeach
                                 <br>
                             @endif
-                            @if($references->author != null)
-                                <p class="ecoregions-details-heading">Author(s)</p>
-                                <hr>
-                                {!! $references->author !!}
-                                <br>
-                            @endif
                             @if($references->reviewers != null)
                                 <p class="ecoregions-details-heading">Reviewer(s)</p>
                                 <hr>
@@ -110,93 +104,85 @@
                             @endif
                         </div>
 
-                        <div class="col-sm-6 offset-sm-1">
-                            <table class="table ecoregions-table-line-spacing">
-                                <tbody>
-                                <p class="ecoregions-details-heading">Description</p>
-                                @if($references->boundaries != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Boundaries</th>
-                                        <td>{!! $references->boundaries !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->drainages != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Drainages flowing into</th>
-                                        <td>{!! $references->drainages !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->main_rivers != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Main rivers to other water
-                                            bodies
-                                        </th>
-                                        <td>{!! $references->main_rivers !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->topography != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Topography</th>
-                                        <td>{!! $references->topography !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->fw_habitats != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Freshwater habitats</th>
-                                        <td>{!! $references->fw_habitats !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->terr_habitats != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Terrestrial habitats</th>
-                                        <td>{!! $references->terr_habitats !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->fist_fauna != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Fish Fauna</th>
-                                        <td>{!! $references->fist_fauna !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->end_fishes != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Description of endemic fishes
-                                        </th>
-                                        <td>{!! $references->end_fishes !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->note_fishes != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Other noteworthy fishes</th>
-                                        <td>{!! $references->note_fishes !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->eco_phenomena != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Ecological phenomena</th>
-                                        <td>{!! $references->eco_phenomena !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->justification != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Justification for delineation
-                                        </th>
-                                        <td>{!! $references->justification !!}</td>
-                                    </tr>
-                                @endif
-                                @if($references->tax_exp != null)
-                                    <tr>
-                                        <th scope="row" class="ecoregions-details-col-1">Level of taxonomic
-                                            exploration
-                                        </th>
-                                        <td>{!! $references->tax_exp !!}</td>
-                                    </tr>
-                                @endif
-                                </tbody>
-                            </table>
+                        <div class="col-sm-6">
+                            @if($references->mht != null)
+                                <p class="ecoregions-details-heading">Major Habitat Type</p>
+                                <hr>
+                                {{ $references->present()->getMajorHabitatType }}
+                                <br><br>
+                            @endif
+                            @if($references->drainages != null)
+                                <p class="ecoregions-details-heading">Drainages flowing into</p>
+                                <hr>
+                                {!! $references->drainages !!}
+                                <br>
+                            @endif
+                            @if($references->main_rivers != null)
+                                <p class="ecoregions-details-heading">Main rivers to other water bodies</p>
+                                <hr>
+                                    {!! $references->main_rivers !!}
+                                <br><br>
+                            @endif
                         </div>
                     </div>
                     <div class="card">
+                        <div class="card-header">
+                            <p class="ecoregions-details-heading"><strong>Description</strong></p>
+                        </div>
+                        <div style="background-color: aliceblue; padding: 20px">
+                            @if($references->boundaries != null)
+                                <p><strong>Boundaries</strong></p>
+                                {!! $references->boundaries !!}
+                            @endif
+
+                            @if($references->topography != null)
+                                <p><strong>Topography</strong></p>
+                                {!! $references->topography !!}
+                            @endif
+
+                            @if($references->fw_habitats != null)
+                                <p><strong>Freshwater habitats</strong></p>
+                                {!! $references->fw_habitats !!}
+                            @endif
+
+                            @if($references->terr_habitats != null)
+                                <p><strong>Terrestrial habitats</strong></p>
+                                {!! $references->terr_habitats !!}
+                            @endif
+
+                            @if($references->fist_fauna != null)
+                                <p><strong>Fish Fauna</strong></p>
+                                {!! $references->fist_fauna !!}
+                            @endif
+
+                            @if($references->end_fishes != null)
+                                <p><strong>Description of endemic fishes</strong></p>
+                                {!! $references->end_fishes !!}
+                            @endif
+
+                            @if($references->note_fishes != null)
+                                <p><strong>Other noteworthy fishes</strong></p>
+                                {!! $references->note_fishes !!}
+                            @endif
+
+                            @if($references->eco_phenomena != null)
+                                <p><strong>Ecological phenomena</strong></p>
+                                {!! $references->eco_phenomena !!}
+                            @endif
+
+                            @if($references->justification != null)
+                                <p><strong>Justification for delineation</strong></p>
+                                {!! $references->justification !!}
+                            @endif
+
+                            @if($references->tax_exp != null)
+                                <p><strong>Level of taxonomic exploration</strong></p>
+                                {!! $references->tax_exp !!}
+                            @endif
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card ecoregions-references-card">
                         <div class="card-header">
                             <p class="ecoregions-details-heading"><strong>References</strong></p>
                         </div>
