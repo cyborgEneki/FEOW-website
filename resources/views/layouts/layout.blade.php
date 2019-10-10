@@ -39,7 +39,6 @@
     <div id="content" role="main">
         @yield('content')
     </div>
-    @yield('scripts')
 
 </div>
 

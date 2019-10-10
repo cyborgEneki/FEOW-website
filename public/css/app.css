@@ -160,6 +160,10 @@ p.neg-margin-top-20 {
   }
 }
 
+.ecoregions-table-line-spacing {
+  line-height: 1.8;
+}
+
 .section-image {
   width: 100%;
 }

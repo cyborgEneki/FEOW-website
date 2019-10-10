@@ -10,7 +10,7 @@
                          src="{{ asset('/img/assets/feow/bird-2.jpeg') }}" class="half-opacity">
                     <figcaption class="flex-caption">
                         <h1 class="super animated fadeinup delayedmore">
-                            List
+                            Ecoregions
                         </h1>
                     </figcaption>
                 </figure>
