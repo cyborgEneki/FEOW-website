@@ -28,10 +28,10 @@
             <div class="card">
                 <div class="card-header">
                     Ecoregions
-                    @if($searchResults == 'true')<a href="{{ route('ecoregions') }}">
+                    @if($searchResults == 'true')<a href="{{ route('ecoregions-list') }}">
                         <button class="float-right btn btn-outline-success my-2 my-sm-0" type="button">Back</button>
                     </a>@endif
-                    <form action="{{ route('ecoregions') }}" method="POST" class="form-inline float-right">
+                    <form action="{{ route('ecoregions-search') }}" method="POST" class="form-inline float-right">
                         {{ csrf_field() }}
                         <input name="search" class="form-control mr-sm-2" type="search" placeholder="Search"
                                aria-label="Search">

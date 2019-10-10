@@ -19,7 +19,7 @@ class EcoregionController extends Controller
     {
         $searchResults = 'true';
         $search = $request->get('search');
-        $ecoregions = Ecoregion::where('eco_name', 'like', '%' . $search . '%')->orWhere('realmd', 'like', '%' . $search . '%')->orWhere('realm', 'like', '%' . $search . '%')->get();
+        $ecoregions = Ecoregion::where('eco_name', 'like', '%' . $search . '%')->orWhere('realmd', 'like', '%' . $search . '%')->orWhere('realm', 'like', '%' . $search . '%')->paginate(15);
         if (count($ecoregions) == 0 ) {
             Session::flash('message', 'No record matched. Try to search again.');;
         }

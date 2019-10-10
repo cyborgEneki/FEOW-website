@@ -37,8 +37,7 @@
                     </a>
                     <div class="dropdown-menu font-size-1em" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ url('/ecoregions/interactive-map') }}">Interactive Map</a>
-                        <a class="dropdown-item" href="{{ url('/ecoregions/browse') }}">Browse</a>
-                        <a class="dropdown-item" href="{{ url('/ecoregions/search') }}">Search</a>
+                        <a class="dropdown-item" href="{{ route('ecoregions-list') }}">List</a>
                     </div>
                 </li>
                 <li class="nav-item">

@@ -34,12 +34,12 @@ Route::get('/global-maps/{type}/{ident}', [
     'uses' => 'GlobalMapController@subpageIndex'
 ]);
 
-Route::get('/ecoregions/browse', [
-    'as' => 'ecoregions',
+Route::get('/ecoregions/list', [
+    'as' => 'ecoregions-list',
     'uses' => 'EcoregionController@index'
 ]);
-Route::post('/ecoregions/browse', [
-    'as' => 'ecoregions',
+Route::post('/ecoregions/list', [
+    'as' => 'ecoregions-search',
     'uses' => 'EcoregionController@search'
 ]);
 Route::get('/ecoregions/interactive-map', function () {
