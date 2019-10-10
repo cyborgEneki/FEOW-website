@@ -23,9 +23,9 @@
             <div class="main-page-image">
                 <img src="{{ asset('/img/assets/feow/'.$subpage->source ) }}" alt="{{ $subpage->title }}" class="flex-image">
             </div>
-            <p class="body-text">
+            <div class="body-text">
                 {!! $subpage->description !!}
-            </p>
+            </div>
         </div>
     </section>
 @stop
