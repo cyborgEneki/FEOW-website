@@ -17,7 +17,7 @@
         </div>
     </section>
     <section class="section section-padded-contact">
-        <div class="container-fluid">
+        <div class="ecoregions-container-fluid">
             <div class="row-fluid">
                 <div>
                     @if ($errors->any())

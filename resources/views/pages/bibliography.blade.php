@@ -21,33 +21,33 @@
     <section class="section custom-section-padded">
         <div class="body-padding">
             <div>
-                <a href="{{ url('/bibliography') }}" class="contributors-in-list-links">All</a>
-                <a href="{{ route('wild', ['letter' => 'A']) }}" class="contributors-in-list-links">A</a>
-                <a href="{{ route('wild', ['letter' => 'B']) }}" class="contributors-in-list-links">B</a>
-                <a href="{{ route('wild', ['letter' => 'C']) }}" class="contributors-in-list-links">C</a>
-                <a href="{{ route('wild', ['letter' => 'D']) }}" class="contributors-in-list-links">D</a>
-                <a href="{{ route('wild', ['letter' => 'E']) }}" class="contributors-in-list-links">E</a>
-                <a href="{{ route('wild', ['letter' => 'F']) }}" class="contributors-in-list-links">F</a>
-                <a href="{{ route('wild', ['letter' => 'G']) }}" class="contributors-in-list-links">G</a>
-                <a href="{{ route('wild', ['letter' => 'H']) }}" class="contributors-in-list-links">H</a>
-                <a href="{{ route('wild', ['letter' => 'I']) }}" class="contributors-in-list-links">I</a>
-                <a href="{{ route('wild', ['letter' => 'J']) }}" class="contributors-in-list-links">J</a>
-                <a href="{{ route('wild', ['letter' => 'K']) }}" class="contributors-in-list-links">K</a>
-                <a href="{{ route('wild', ['letter' => 'L']) }}" class="contributors-in-list-links">L</a>
-                <a href="{{ route('wild', ['letter' => 'M']) }}" class="contributors-in-list-links">M</a>
-                <a href="{{ route('wild', ['letter' => 'N']) }}" class="contributors-in-list-links">N</a>
-                <a href="{{ route('wild', ['letter' => 'O']) }}" class="contributors-in-list-links">O</a>
-                <a href="{{ route('wild', ['letter' => 'P']) }}" class="contributors-in-list-links">P</a>
-                <a href="{{ route('wild', ['letter' => 'Q']) }}" class="contributors-in-list-links">Q</a>
-                <a href="{{ route('wild', ['letter' => 'R']) }}" class="contributors-in-list-links">R</a>
-                <a href="{{ route('wild', ['letter' => 'S']) }}" class="contributors-in-list-links">S</a>
-                <a href="{{ route('wild', ['letter' => 'T']) }}" class="contributors-in-list-links">T</a>
-                <a href="{{ route('wild', ['letter' => 'U']) }}" class="contributors-in-list-links">U</a>
-                <a href="{{ route('wild', ['letter' => 'V']) }}" class="contributors-in-list-links">V</a>
-                <a href="{{ route('wild', ['letter' => 'W']) }}" class="contributors-in-list-links">W</a>
-                <a href="{{ route('wild', ['letter' => 'X']) }}" class="contributors-in-list-links">X</a>
-                <a href="{{ route('wild', ['letter' => 'Y']) }}" class="contributors-in-list-links">Y</a>
-                <a href="{{ route('wild', ['letter' => 'Z']) }}" class="contributors-in-list-links">Z</a>
+                <a href="{{ url('/bibliography') }}" class="contributors-in-list-links btn btn-light">All</a>
+                <a href="{{ route('wild', ['letter' => 'A']) }}" class="contributors-in-list-links btn btn-light">A</a>
+                <a href="{{ route('wild', ['letter' => 'B']) }}" class="contributors-in-list-links btn btn-light">B</a>
+                <a href="{{ route('wild', ['letter' => 'C']) }}" class="contributors-in-list-links btn btn-light">C</a>
+                <a href="{{ route('wild', ['letter' => 'D']) }}" class="contributors-in-list-links btn btn-light">D</a>
+                <a href="{{ route('wild', ['letter' => 'E']) }}" class="contributors-in-list-links btn btn-light">E</a>
+                <a href="{{ route('wild', ['letter' => 'F']) }}" class="contributors-in-list-links btn btn-light">F</a>
+                <a href="{{ route('wild', ['letter' => 'G']) }}" class="contributors-in-list-links btn btn-light">G</a>
+                <a href="{{ route('wild', ['letter' => 'H']) }}" class="contributors-in-list-links btn btn-light">H</a>
+                <a href="{{ route('wild', ['letter' => 'I']) }}" class="contributors-in-list-links btn btn-light">I</a>
+                <a href="{{ route('wild', ['letter' => 'J']) }}" class="contributors-in-list-links btn btn-light">J</a>
+                <a href="{{ route('wild', ['letter' => 'K']) }}" class="contributors-in-list-links btn btn-light">K</a>
+                <a href="{{ route('wild', ['letter' => 'L']) }}" class="contributors-in-list-links btn btn-light">L</a>
+                <a href="{{ route('wild', ['letter' => 'M']) }}" class="contributors-in-list-links btn btn-light">M</a>
+                <a href="{{ route('wild', ['letter' => 'N']) }}" class="contributors-in-list-links btn btn-light">N</a>
+                <a href="{{ route('wild', ['letter' => 'O']) }}" class="contributors-in-list-links btn btn-light">O</a>
+                <a href="{{ route('wild', ['letter' => 'P']) }}" class="contributors-in-list-links btn btn-light">P</a>
+                <a href="{{ route('wild', ['letter' => 'Q']) }}" class="contributors-in-list-links btn btn-light">Q</a>
+                <a href="{{ route('wild', ['letter' => 'R']) }}" class="contributors-in-list-links btn btn-light">R</a>
+                <a href="{{ route('wild', ['letter' => 'S']) }}" class="contributors-in-list-links btn btn-light">S</a>
+                <a href="{{ route('wild', ['letter' => 'T']) }}" class="contributors-in-list-links btn btn-light">T</a>
+                <a href="{{ route('wild', ['letter' => 'U']) }}" class="contributors-in-list-links btn btn-light">U</a>
+                <a href="{{ route('wild', ['letter' => 'V']) }}" class="contributors-in-list-links btn btn-light">V</a>
+                <a href="{{ route('wild', ['letter' => 'W']) }}" class="contributors-in-list-links btn btn-light">W</a>
+                <a href="{{ route('wild', ['letter' => 'X']) }}" class="contributors-in-list-links btn btn-light">X</a>
+                <a href="{{ route('wild', ['letter' => 'Y']) }}" class="contributors-in-list-links btn btn-light">Y</a>
+                <a href="{{ route('wild', ['letter' => 'Z']) }}" class="contributors-in-list-links btn btn-light">Z</a>
             </div>
             <ul class="no-list-style">
                 @foreach($bibliography as $each)

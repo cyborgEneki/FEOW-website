@@ -127,6 +127,7 @@ p.neg-margin-top-20 {
 .contributors-in-list-links {
   color: #235ac7;
   padding: 0 5px;
+  margin-top: 5px;
 }
 
 .no-list-style {
@@ -152,6 +153,16 @@ p.neg-margin-top-20 {
 
 .ecoregions-details-col-1 {
   width: 30%;
+}
+
+.ecoregions-container-fluid {
+  padding: 0 100px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .ecoregions-container-fluid {
+    padding: 0 50px 50px !important;
+  }
 }
 
 .section-image {
