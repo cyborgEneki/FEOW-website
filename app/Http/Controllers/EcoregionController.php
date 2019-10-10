@@ -12,7 +12,7 @@ class EcoregionController extends Controller
     {
         $ecoregions = Ecoregion::paginate(15);
         $searchResults = 'false';
-        return view('pages.browse')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
+        return view('pages.ecoregions-list')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
     }
 
     public function search(Request $request)
@@ -20,10 +20,10 @@ class EcoregionController extends Controller
         $searchResults = 'true';
         $search = $request->get('search');
         $ecoregions = Ecoregion::where('eco_name', 'like', '%' . $search . '%')->orWhere('realmd', 'like', '%' . $search . '%')->orWhere('realm', 'like', '%' . $search . '%')->paginate(15);
-        if (count($ecoregions) == 0 ) {
+        if (count($ecoregions) == 0) {
             Session::flash('message', 'No record matched. Try to search again.');;
         }
-        return view('pages.browse')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
+        return view('pages.ecoregions-list')->with(['ecoregions' => $ecoregions, 'searchResults' => $searchResults]);
     }
 
     public function details($id)

@@ -23,4 +23,9 @@ class Ecoregion extends Model
     {
         return $this->belongsToMany(Bibliography::class, 'ecoregionreference', 'eco_id', 'ref_id');
     }
+
+    public function countries()
+    {
+        return $this->belongsToMany(Country::class, 'ecoregioncountry', 'ecoid', 'countryid');
+    }
 }
