@@ -63,6 +63,10 @@ Route::get('/bibliography/{letter}', [
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');
 
+Route::get('/copyright', function () {
+    return view ('pages.copyright');
+});
+
 Route::any('/{any}', function () {
     return view('pages.404');
 })->where('any', '.*');
