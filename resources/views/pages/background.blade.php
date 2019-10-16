@@ -79,7 +79,7 @@
                 <div class="span3 reorder-original-bottom">
                     <div class="margin-bottom-30">
                         <img alt="some image" class="img-circle section-image"
-                             src="{{ asset('/img/assets/feow/landscape-1024x434.jpeg') }}">
+                             src="{{ asset('/img/assets/feow/map.png') }}">
                     </div>
                 </div>
             </div>
