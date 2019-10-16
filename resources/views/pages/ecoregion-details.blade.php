@@ -37,7 +37,7 @@
                 <p class="ecoregions-details-heading"><strong>{{ $references->eco_name }}</strong></p>
                 <div id="viewDiv" style="height: 400px"></div>
                 <br>
-                <div class="card">
+                <div class="card hidden">
                     <div class="card-header">
                         <p class="ecoregions-details-heading"><strong>Biodiversity</strong></p>
                     </div>
