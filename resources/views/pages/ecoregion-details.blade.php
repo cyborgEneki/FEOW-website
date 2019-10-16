@@ -35,7 +35,7 @@
         <section class="section custom-section-padded">
             <div class="body-padding body-text">
                 <p class="ecoregions-details-heading"><strong>{{ $references->eco_name }}</strong></p>
-                <div id="viewDiv" style="height: 300px"></div>
+                <div id="viewDiv" style="height: 400px"></div>
                 <br>
                 <div class="card">
                     <div class="card-header">
@@ -623,34 +623,53 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-<script src="https://js.arcgis.com/4.12/"></script>
+<script src="https://js.arcgis.com/4.13/"></script>
 <script>
-    require([
-        "esri/Map",
-        "esri/views/MapView",
-        "esri/layers/FeatureLayer"
-    ], function (Map, MapView, FeatureLayer) {
+  require([
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/layers/FeatureLayer",
+  ], function (Map, MapView, FeatureLayer) {
 
-        var map = new Map({
-            basemap: "topo-vector"
-        });
-
-        var view = new MapView({
-            container: "viewDiv",
-            map: map,
-            center: [14.20004, 13.23047], // longitude, latitude
-            zoom: 3
-        });
-        var popupEcoregion = {
-            "title": "Ecoregion: {ECOREGION}",
-            "content": "<b>Ecoregion ID:</b> {ECO_ID}<br><br><a href='/ecoregions/details/{ECO_ID}'>More Details</a>"
-        }
-        var feowLayer = new FeatureLayer({
-            url: "https://maps.wwfus.org/server/rest/services/FEOW/feowhs_011313/MapServer",
-            outFields: ["ECOREGION", "ECO_ID"],
-            popupTemplate: popupEcoregion
-        });
-        map.add(feowLayer);
+    var map = new Map({
+      basemap: "topo-vector"
     });
+
+    var popupEcoregion = {
+      "title": "Ecoregion: {ECOREGION}",
+      "content": "<b>Ecoregion ID:</b> {ECO_ID}<br><br><a href='/ecoregions/details/{ECO_ID}'>More Details</a>"
+    }
+    var feowLayer = new FeatureLayer({
+      url: "https://maps.wwfus.org/server/rest/services/FEOW/feowhs_011313/MapServer",
+      outFields: ["ECOREGION", "ECO_ID"],
+      popupTemplate: popupEcoregion
+    });
+    map.add(feowLayer);
+    var query = {
+      outFields: ["*"],
+      returnGeometry: true,
+      where: "ECO_ID={{ $references->id }}"
+    };
+    var symbol = {
+      type: "simple-fill",
+      color: [ 255,0,0,0],
+      style: "solid",
+      outline: {
+        color: "red",
+        width: 2
+      }
+    };
+    feowLayer.queryFeatures(query).then(function(result) {
+      var poly = result.features[0];
+      poly.symbol = symbol;
+      //create a view
+      var view = new MapView({
+        container: "viewDiv",
+        map: map
+      });
+      view.graphics.add(poly);
+      view.extent = poly.geometry.extent.expand(2);
+    });
+  });
 </script>
 </body>
