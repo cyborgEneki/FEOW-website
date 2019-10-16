@@ -18,9 +18,11 @@
                         A global biogeographical regionalization of the Earth's freshwater biodiversity
                     </p>
                     <div class="text-center">
-                        <button class="btn btn-large btn-primary banner-button">
-                            Explore Map
-                        </button>
+                        <a href="{{ url('/ecoregions/interactive-map') }}">
+                            <button class="btn btn-large btn-primary banner-button">
+                                Explore Map
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
