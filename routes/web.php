@@ -67,6 +67,10 @@ Route::get('/copyright', function () {
     return view ('pages.copyright');
 });
 
+Route::get('/sponsors', function () {
+    return view ('pages.sponsors');
+});
+
 Route::any('/{any}', function () {
     return view('pages.404');
 })->where('any', '.*');
