@@ -46,7 +46,7 @@
                         <td style="padding-top:20px" align="center" width="300px"><img src="{{ asset('/img/assets/sponsors/usaidnew.png') }}"
                                                                                        alt="USAID"/></td>
                         <td width="300px" align="center">
-                            <img src="{{ asset('/img/assets/sponsors/pip.gif') }}" alt="PiP"/>
+                            <img src="{{ asset('/img/assets/sponsors/PiP.gif') }}" alt="PiP"/>
                         </td>
                     </tr>
                     <tr>
