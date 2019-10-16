@@ -26,7 +26,7 @@
                         <td valign="middle" colspan="3" style="font-size:80%">Major funding provided to WWF by:</td>
                     </tr>
                     <tr>
-                        <td width="50%" height="98" valign="middle" colspan="3"><img src="/images/cokenew.jpg"/></td>
+                        <td width="50%" height="98" valign="middle" colspan="3"><img src="{{ asset('/img/assets/sponsors/cokenew.jpg') }}"/></td>
                     </tr>
                     <tr>
                         <td valign="middle" colspan="3" style="font-size:80%" height="30px">Additional funding provided
@@ -34,7 +34,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3"><img src="/images/diversey.jpg"/></td>
+                        <td colspan="3"><img src="{{ asset('/img/assets/sponsors/diversey.jpg') }}"/></td>
                     </tr>
                     <tr>
                         <td valign="bottom" style="font-size:80%" width="300px" height="40px">Major funding provided to
@@ -43,10 +43,10 @@
                         <td width="300px" align="center" valign="bottom" style="font-size:80%">through:</td>
                     </tr>
                     <tr>
-                        <td style="padding-top:20px" align="center" width="300px"><img src="/images/usaidnew.png"
+                        <td style="padding-top:20px" align="center" width="300px"><img src="{{ asset('/img/assets/sponsors/usaidnew.png') }}"
                                                                                        alt="USAID"/></td>
                         <td width="300px" align="center">
-                            <img src="/images/PiP.gif" alt="PiP"/>
+                            <img src="{{ asset('/img/assets/sponsors/pip.gif') }}" alt="PiP"/>
                         </td>
                     </tr>
                     <tr>
