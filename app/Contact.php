@@ -13,4 +13,16 @@ class Contact extends Model
         'created_at',
         'updated_at'
     );
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'subject',
+        'message',
+    ];
 }

@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.12/"></script>
     <script>
-        require([
+      var btnHtml = '<div class="esri-component esri-widget">';
+      btnHtml += '<div id="btnHome" class="esri-widget--button esri-widget esri-interactive" role="button" title="Back to FEOW home page">';
+      btnHtml += '<span aria-hidden="true" role="presentation" class="esri-icon esri-icon-home"></span>';
+      btnHtml += '<span class="esri-icon-font-fallback-text">Home</span></div></div>';
+      require([
             "esri/Map",
             "esri/views/MapView",
             "esri/layers/FeatureLayer"
@@ -36,9 +40,19 @@
                 popupTemplate: popupEcoregion
             });
             map.add(feowLayer);
-        });
+            var theMap = document.getElementsByClassName ("esri-ui-top-left")[0];
+            function htmlToElement(html) {
+              var template = document.createElement('template');
+              html = html.trim();
+              template.innerHTML = html;
+              return template.content.firstChild;
+            }
+            theMap.appendChild(htmlToElement(btnHtml));
+            document.getElementById('btnHome').onclick=function(){window.location = '/'}
+      });
     </script>
 </head>
 <body>
+
 <div id="viewDiv"></div>
 </body>
