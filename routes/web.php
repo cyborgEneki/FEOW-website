@@ -50,7 +50,7 @@ Route::get('/ecoregions/details/{id}', [
     'uses' => 'EcoregionController@details'
 ]);
 
-Route::get('/downloads', 'DownloadController@index');
+Route::get('/download', 'DownloadController@index');
 
 Route::get('/contributors', 'ContributorController@index');
 
