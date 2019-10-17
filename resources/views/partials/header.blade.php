@@ -41,7 +41,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/downloads') }}">Downloads</a>
+                    <a class="nav-link" href="{{ url('/download') }}">Downloads</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/contributors') }}">Contributors</a>
