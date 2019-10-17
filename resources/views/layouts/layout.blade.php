@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
     <link href="{{ asset('/img/favicon.ico') }}" rel="shortcut icon">
-    <link href="{{ asset('/img/apple-touch-icon-144x144-precomposed.png') }}" rel="apple-touch-icon-precomposed"
+    <link href="{{ asset('/img/feow-144x144.png') }}" rel="apple-touch-icon-precomposed"
           sizes="144x144">
-    <link href="{{ asset('/img/apple-touch-icon-114x114-precomposed.png') }}" rel="apple-touch-icon-precomposed"
+    <link href="{{ asset('/img/feow-114x114.png') }}" rel="apple-touch-icon-precomposed"
           sizes="114x114">
-    <link href="{{ asset('/img/apple-touch-icon-72x72-precomposed.png') }}" rel="apple-touch-icon-precomposed"
+    <link href="{{ asset('/img/feow-72x72.png') }}" rel="apple-touch-icon-precomposed"
           sizes="72x72">
-    <link href="{{ asset('/img/apple-touch-icon-57x57-precomposed.png') }}" rel="apple-touch-icon-precomposed">
+    <link href="{{ asset('/img/feow-57x57.png') }}" rel="apple-touch-icon-precomposed">
     <link href="{{ asset('/css/bootstrap.css') }}" media="screen" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('/css/responsive.css') }}" media="screen" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('/css/font-awesome-all.css') }}" media="screen" rel="stylesheet" type="text/css"/>
