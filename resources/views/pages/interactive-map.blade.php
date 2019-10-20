@@ -55,4 +55,11 @@
 <body>
 
 <div id="viewDiv"></div>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-92397375-1');
+</script>
 </body>
