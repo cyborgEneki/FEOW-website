@@ -68,18 +68,6 @@
     });
 </script>
 
-{{--<script type="text/javascript">--}}
-    {{--if (typeof gaJsHost == 'undefined') {--}}
-        {{--var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");--}}
-        {{--document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));--}}
-    {{--}--}}
-{{--</script>--}}
-{{--<script type="text/javascript">--}}
-    {{--try {--}}
-        {{--var pageTracker = _gat._getTracker("#########");--}}
-        {{--pageTracker._trackPageview();--}}
-    {{--} catch (err) {--}}
-    {{--}</script>--}}
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
